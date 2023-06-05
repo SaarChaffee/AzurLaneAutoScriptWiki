@@ -26,7 +26,7 @@
   "themeConfig": {
     "editLink": {
       "text": "在 GitHub 编辑此页面",
-      "pattern": "https://github.com/SaarChaffee/AzurLaneAutoScriptWiki/edit/main/:path"
+      "pattern": "https://github.com/SaarChaffee/AzurLaneAutoScriptWiki/edit/master/:path"
     },
     "navText": "导航",
     "nav": [
