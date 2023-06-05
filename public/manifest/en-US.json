@@ -1,0 +1,16 @@
+{
+  "name": "AzurLaneAutoScript",
+  "short_name": "ALAS",
+  "description": "Take over almost all Azur Lane gameplay.",
+  "start_url": "/en-US/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#40dfff",
+  "icons": [
+    {
+      "src": "/icon.ico",
+      "sizes": "384x384",
+      "type": "image/x-icon"
+    }
+  ]
+}

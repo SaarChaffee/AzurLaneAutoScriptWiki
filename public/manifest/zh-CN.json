@@ -1,0 +1,16 @@
+{
+  "name": "AzurLaneAutoScript",
+  "short_name": "ALAS",
+  "description": "碧蓝航线小助手，无缝委托科研，全自动大世界",
+  "start_url": "/zh-CN/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#40dfff",
+  "icons": [
+    {
+      "src": "/icon.ico",
+      "sizes": "384x384",
+      "type": "image/x-icon"
+    }
+  ]
+}

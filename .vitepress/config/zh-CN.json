@@ -1,0 +1,581 @@
+{
+  "description": "碧蓝航线小助手，无缝委托科研，全自动大世界",
+  "head": [
+    [
+      "link",
+      {
+        "rel": "icon",
+        "href": "/icon.ico"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "manifest",
+        "href": "/manifest/zh-CN.json"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "theme-color",
+        "content": "#40dfff"
+      }
+    ]
+  ],
+  "themeConfig": {
+    "editLink": {
+      "text": "在 GitHub 编辑此页面",
+      "pattern": "https://github.com/SaarChaffee/AzurLaneAutoScriptWiki/edit/main/:path"
+    },
+    "navText": "导航",
+    "nav": [
+      {
+        "text": "入门",
+        "link": "/manual/",
+        "activeMatch": "/manual/"
+      },
+      {
+        "text": "使用",
+        "link": "/usage/",
+        "activeMatch": "/usage/"
+      },
+      {
+        "text": "开发",
+        "link": "/develop/",
+        "activeMatch": "/develop/"
+      },
+      {
+        "text": "API",
+        "link": "/api/",
+        "activeMatch": "/api/"
+      },
+      {
+        "text": "插件",
+        "items": [
+          {
+            "text": "MAA",
+            "link": "/plugins/maa",
+            "activeMatch": "/plugins/maa"
+          },
+          {
+            "text": "FGO-Py",
+            "link": "/plugins/fgopy",
+            "activeMatch": "/plugins/fgopy"
+          }
+        ],
+        "activeMatch": "/plugins/"
+      }
+    ],
+    "sidebar": {
+      "/manual/": [
+        {
+          "text": "",
+          "items": [
+            {
+              "text": "介绍",
+              "link": "/manual/"
+            }
+          ]
+        },
+        {
+          "text": "安装",
+          "items": [
+            {
+              "text": "在 Windows 中安装",
+              "link": "/manual/install/windows"
+            },
+            {
+              "text": "在 MacOS 中安装",
+              "link": "/manual/install/macos"
+            },
+            {
+              "text": "在 Linux 中安装",
+              "link": "/manual/install/linux"
+            },
+            {
+              "text": "在 Android 中安装",
+              "link": "/manual/install/android"
+            },
+            {
+              "text": "在容器中安装",
+              "link": "/manual/install/docker"
+            }
+          ]
+        },
+        {
+          "text": "快速上手",
+          "items": [
+            {
+              "text": "目录内容",
+              "link": "/manual/quick-start/folder"
+            },
+            {
+              "text": "界面",
+              "link": "/manual/quick-start/ui"
+            },
+            {
+              "text": "配置",
+              "link": "/manual/quick-start/config"
+            },
+            {
+              "text": "调度器",
+              "link": "/manual/quick-start/scheduler"
+            },
+            {
+              "text": "过滤器",
+              "link": "/manual/quick-start/filter"
+            },
+            {
+              "text": "消息推送",
+              "link": "/manual/quick-start/message-push"
+            },
+            {
+              "text": "远程控制",
+              "link": "/manual/quick-start/remote-control"
+            },
+            {
+              "text": "常见问题",
+              "link": "/manual/quick-start/FAQ"
+            }
+          ]
+        },
+        {
+          "text": "模拟器相关",
+          "items": [
+            {
+              "text": "模拟器设置",
+              "link": "/manual/emulator/emulator-settings"
+            },
+            {
+              "text": "模拟器支持",
+              "link": "/manual/emulator/emulator-support"
+            }
+          ]
+        },
+        {
+          "text": "游戏相关",
+          "items": [
+            {
+              "text": "游戏设置",
+              "link": "/manual/game/game-settings"
+            },
+            {
+              "text": "碧蓝航线知识",
+              "link": "/manual/game/azurlane-knowledge"
+            },
+            {
+              "text": "已废除功能",
+              "link": "/manual/game/deprecated"
+            }
+          ]
+        }
+      ],
+      "/usage/": [
+        {
+          "text": "",
+          "items": [
+            {
+              "text": "总览",
+              "link": "/usage/"
+            }
+          ]
+        },
+        {
+          "text": "Alas",
+          "items": [
+            {
+              "text": "Alas 设置",
+              "link": "/usage/alas/alas-settings"
+            },
+            {
+              "text": "通用设置",
+              "link": "/usage/alas/general-settings"
+            },
+            {
+              "text": "重启设置",
+              "link": "/usage/alas/restart-settings"
+            },
+            {
+              "text": "过滤器",
+              "items": [
+                {
+                  "text": "委托过滤器",
+                  "link": "/usage/alas/filter/commission-filter"
+                },
+                {
+                  "text": "科研过滤器",
+                  "link": "/usage/alas/filter/research-filter"
+                },
+                {
+                  "text": "战术学院过滤器",
+                  "link": "/usage/alas/filter/tactical-filter"
+                },
+                {
+                  "text": "商店过滤器",
+                  "link": "/usage/alas/filter/shop-filter"
+                },
+                {
+                  "text": "强化舰船过滤器",
+                  "link": "/usage/alas/filter/enhance-filter"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "出击",
+          "items": [
+            {
+              "text": "主线图",
+              "link": "/usage/farm/campaign"
+            },
+            {
+              "text": "刷紧急委托",
+              "link": "/usage/farm/gems-farming"
+            },
+            {
+              "text": "潜艇图",
+              "link": "/usage/farm/sos"
+            }
+          ]
+        },
+        {
+          "text": "活动",
+          "items": [
+            {
+              "text": "活动通用设置",
+              "link": "/usage/event/event-general"
+            },
+            {
+              "text": "活动图",
+              "link": "/usage/event/event"
+            },
+            {
+              "text": "共斗活动",
+              "link": "/usage/event/raid"
+            },
+            {
+              "text": "极地风暴",
+              "link": "/usage/event/coalition"
+            },
+            {
+              "text": "商船护航",
+              "link": "/usage/event/maritime-escort"
+            },
+            {
+              "text": "作战档案",
+              "link": "/usage/event/war-archives"
+            },
+            {
+              "text": "活动每日",
+              "items": [
+                {
+                  "text": "活动每日A | B | C | D | SP图",
+                  "link": "/usage/event/daily/event"
+                },
+                {
+                  "text": "共斗每日",
+                  "link": "/usage/event/daily/raid"
+                },
+                {
+                  "text": "极地风暴每日SP",
+                  "link": "/usage/event/daily/coalition"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "收获",
+          "items": [
+            {
+              "text": "委托",
+              "link": "/usage/reward/commission"
+            },
+            {
+              "text": "战术学院",
+              "link": "/usage/reward/tactical"
+            },
+            {
+              "text": "科研",
+              "link": "/usage/reward/research"
+            },
+            {
+              "text": "后宅",
+              "link": "/usage/reward/dorm"
+            },
+            {
+              "text": "指挥喵",
+              "link": "/usage/reward/meowfficer"
+            },
+            {
+              "text": "大舰队",
+              "link": "/usage/reward/guild"
+            },
+            {
+              "text": "收获",
+              "link": "/usage/reward/reward"
+            }
+          ]
+        },
+        {
+          "text": "每日任务",
+          "items": [
+            {
+              "text": "每日任务",
+              "link": "/usage/daily/daily"
+            },
+            {
+              "text": "困难图",
+              "link": "/usage/daily/hard"
+            },
+            {
+              "text": "演习",
+              "link": "/usage/daily/exercise"
+            },
+            {
+              "text": "通用商店",
+              "link": "/usage/daily/shop-frequent"
+            },
+            {
+              "text": "其他商店",
+              "link": "/usage/daily/shop-once"
+            },
+            {
+              "text": "开发船坞",
+              "link": "/usage/daily/shipyard"
+            },
+            {
+              "text": "每日抽卡",
+              "link": "/usage/daily/gacha"
+            },
+            {
+              "text": "白嫖奖励",
+              "link": "/usage/daily/freebies"
+            }
+          ]
+        },
+        {
+          "text": "大世界",
+          "items": [
+            {
+              "text": "通用设置",
+              "link": "/usage/opsi/general"
+            },
+            {
+              "text": "余烬信标",
+              "link": "/usage/opsi/ash-beacon"
+            },
+            {
+              "text": "信标支援",
+              "link": "/usage/opsi/ash-assist"
+            },
+            {
+              "text": "每月开荒",
+              "link": "/usage/opsi/explore"
+            },
+            {
+              "text": "大世界商店",
+              "link": "/usage/opsi/shop"
+            },
+            {
+              "text": "兑换商店",
+              "link": "/usage/opsi/voucher"
+            },
+            {
+              "text": "大世界每日",
+              "link": "/usage/opsi/daily"
+            },
+            {
+              "text": "隐秘海域",
+              "link": "/usage/opsi/obscure"
+            },
+            {
+              "text": "深渊海域",
+              "link": "/usage/opsi/abyssal"
+            },
+            {
+              "text": "档案坐标",
+              "link": "/usage/opsi/archive"
+            },
+            {
+              "text": "塞壬要塞",
+              "link": "/usage/opsi/stronghold"
+            },
+            {
+              "text": "月度Boss",
+              "link": "/usage/opsi/month-boss"
+            },
+            {
+              "text": "短猫相接",
+              "link": "/usage/opsi/meowfficer-farming"
+            },
+            {
+              "text": "侵蚀1练级",
+              "link": "/usage/opsi/hazard-1-leveling"
+            },
+            {
+              "text": "跨月每日",
+              "link": "/usage/opsi/cross-mouth"
+            }
+          ]
+        },
+        {
+          "text": "工具",
+          "items": [
+            {
+              "text": "更新器",
+              "link": "/usage/tool/updater"
+            },
+            {
+              "text": "远程控制",
+              "link": "/usage/tool/remote-control"
+            },
+            {
+              "text": "半自动点击",
+              "link": "/usage/tool/daemon"
+            },
+            {
+              "text": "大世界半自动",
+              "link": "/usage/tool/opsi-daemon"
+            },
+            {
+              "text": "性能测试",
+              "link": "/usage/tool/benchmark"
+            },
+            {
+              "text": "反和谐",
+              "link": "/usage/tool/uncensored"
+            },
+            {
+              "text": "游戏管理器",
+              "link": "/usage/tool/game-manager"
+            }
+          ]
+        }
+      ],
+      "/develop/": [
+        {
+          "text": "",
+          "items": [
+            {
+              "text": "总览",
+              "link": "/develop/"
+            }
+          ]
+        },
+        {
+          "text": "开发教程",
+          "items": [
+            {
+              "text": "梦开始的地方",
+              "link": "/develop/start"
+            },
+            {
+              "text": "起步",
+              "items": [
+                {
+                  "text": "调试",
+                  "link": "/develop/beginner/debugging"
+                },
+                {
+                  "text": "多服务器支持",
+                  "link": "/develop/beginner/multi-server-support"
+                }
+              ]
+            },
+            {
+              "text": "基础",
+              "items": [
+                {
+                  "text": "工具类",
+                  "link": "/develop/elementary/utils"
+                },
+                {
+                  "text": "装饰器",
+                  "link": "/develop/elementary/decorators"
+                },
+                {
+                  "text": "日志",
+                  "link": "/develop/elementary/log"
+                },
+                {
+                  "text": "异常",
+                  "link": "/develop/elementary/exception"
+                }
+              ]
+            },
+            {
+              "text": "中级",
+              "items": [
+                {
+                  "text": "用于识别的类",
+                  "link": "/develop/intermediate/detection"
+                },
+                {
+                  "text": "操作游戏界面的类和方法",
+                  "link": "/develop/intermediate/ui-control"
+                },
+                {
+                  "text": "光学字符识别",
+                  "link": "/develop/intermediate/ocr"
+                }
+              ]
+            },
+            {
+              "text": "高级",
+              "items": [
+                {
+                  "text": "地图识别",
+                  "link": "/develop/advance/local-map"
+                },
+                {
+                  "text": "创建全局地图",
+                  "link": "/develop/advance/create-globe-map"
+                },
+                {
+                  "text": "全局地图",
+                  "link": "/develop/advance/globe-map"
+                }
+              ]
+            },
+            {
+              "text": "Alas 界面",
+              "items": [
+                {
+                  "text": "生成 GUI 设置",
+                  "link": "/develop/gui/gui-option"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "维护文档",
+          "items": [
+            {
+              "text": "api样例",
+              "link": "/develop/doc/api-exp"
+            },
+            {
+              "text": "Markdown样例",
+              "link": "/develop/doc/md-exp"
+            }
+          ]
+        }
+      ],
+      "/api/": [
+        {
+          "text": "",
+          "items": [
+            {
+              "text": "总览",
+              "link": "/api/"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

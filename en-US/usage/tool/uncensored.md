@@ -1,0 +1,3 @@
+::: warning
+Only for CN.
+:::

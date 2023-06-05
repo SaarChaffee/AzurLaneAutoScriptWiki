@@ -1,0 +1,86 @@
+@import './element.scss';
+
+html {
+  --c-border: transparent;
+  --k-color-success: #67c23a;
+  --k-color-danger: #f56c6c;
+  --k-color-warning: #e49400;
+  --k-color-primary: var(--vp-c-text-1);
+  --k-color-secondary: var(--vp-c-text-2);
+  --k-color-active: var(--vp-c-brand);
+  --k-color-border: var(--vp-c-divider);
+}
+
+html.dark {
+  --c-border: transparent; // var(--vp-c-divider-inverse);
+  --k-color-success: #3ba55e;
+  --k-color-danger: #ff595a;
+  --k-color-warning: #f9af1b;
+}
+
+:root {
+  --vp-c-brand: #40dfff;                                // 250 50 50
+  --vp-c-brand-light: #63e1fa;                          // 250 50 55
+  --vp-c-brand-lighter: #7ce9ff;                        // 250 50 60
+  --vp-c-brand-dark: #32bfdb;                           // 250 40 45
+  --vp-c-brand-darker: #398c9c;                         // 250 30 40
+  --vp-c-brand-dimm: #34b7d125;                         // 250 40 40                              // 250 50 50
+  --vp-c-brand-alt: #1d59da;                            // 275 90 90
+  --vp-nav-height: 64px;
+}
+
+html.dark {
+  --vp-c-brand: #2cc8e7;                                // 250 70 70
+  --vp-c-brand-light: #1dbada;                          // 250 60 60
+  --vp-c-brand-lighter: #0498b6;                        // 250 50 50
+  --vp-c-brand-dark: #5de2fd;                           // 250 70 75
+  --vp-c-brand-darker: #b5fff9;                         // 250 70 80
+  --vp-c-brand-dimm: #64bfd11f;                         // 250 70 80
+  --vp-c-brand-alt: #3977d3;                            // 275 50 95
+}
+
+.purple {
+  color: #a774eb;
+}
+
+.markdown {
+  a:hover {
+    text-decoration: underline;
+  }
+
+  code {
+    color: var(--fg2);
+    padding: 0.25rem 0.5rem;
+    background-color: var(--page-bg);
+    border-radius: 3px;
+    overflow-wrap: break-word;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+.Layout.layout-schema {
+  .VPContent {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+    @media (min-width: 960px) {
+      padding-left: var(--vp-sidebar-width);
+    }
+  }
+
+  .VPNavBar.has-sidebar {
+    display: none;
+  }
+
+  .VPSidebar {
+    padding-left: 32px;
+    width: var(--vp-sidebar-width);
+  }
+
+  .vp-sidebar-view {
+    @media (min-width: 960px) {
+      padding-top: 0;
+    }
+  }
+}

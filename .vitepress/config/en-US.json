@@ -1,0 +1,581 @@
+{
+  "description": "Take over almost all Azur Lane gameplay.",
+  "head": [
+    [
+      "link",
+      {
+        "rel": "icon",
+        "href": "/icon.ico"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "manifest",
+        "href": "/manifest/en-US.json"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "theme-color",
+        "content": "#40dfff"
+      }
+    ]
+  ],
+  "themeConfig": {
+    "editLink": {
+      "text": "Edit this page on GitHub",
+      "pattern": "https://github.com/SaarChaffee/AzurLaneAutoScriptWiki/edit/main/:path"
+    },
+    "navText": "Navi",
+    "nav": [
+      {
+        "text": "Get Started",
+        "link": "/manual/",
+        "activeMatch": "/manual/"
+      },
+      {
+        "text": "Usage",
+        "link": "/usage/",
+        "activeMatch": "/usage/"
+      },
+      {
+        "text": "Develop",
+        "link": "/develop/",
+        "activeMatch": "/develop/"
+      },
+      {
+        "text": "API",
+        "link": "/api/",
+        "activeMatch": "/api/"
+      },
+      {
+        "text": "Plugins",
+        "items": [
+          {
+            "text": "MAA",
+            "link": "/plugins/maa",
+            "activeMatch": "/plugins/maa"
+          },
+          {
+            "text": "FGO-Py",
+            "link": "/plugins/fgopy",
+            "activeMatch": "/plugins/fgopy"
+          }
+        ],
+        "activeMatch": "/plugins/"
+      }
+    ],
+    "sidebar": {
+      "/manual/": [
+        {
+          "text": "",
+          "items": [
+            {
+              "text": "Introduction",
+              "link": "/manual/"
+            }
+          ]
+        },
+        {
+          "text": "Install",
+          "items": [
+            {
+              "text": "Install on Windows",
+              "link": "/manual/install/windows"
+            },
+            {
+              "text": "Install on MacOS",
+              "link": "/manual/install/macos"
+            },
+            {
+              "text": "Install on Linux",
+              "link": "/manual/install/linux"
+            },
+            {
+              "text": "Install on Android",
+              "link": "/manual/install/android"
+            },
+            {
+              "text": "Use in Docker",
+              "link": "/manual/install/docker"
+            }
+          ]
+        },
+        {
+          "text": "Get Started",
+          "items": [
+            {
+              "text": "Directory Structure",
+              "link": "/manual/quick-start/folder"
+            },
+            {
+              "text": "UI",
+              "link": "/manual/quick-start/ui"
+            },
+            {
+              "text": "Config",
+              "link": "/manual/quick-start/config"
+            },
+            {
+              "text": "Scheduler",
+              "link": "/manual/quick-start/scheduler"
+            },
+            {
+              "text": "Filter",
+              "link": "/manual/quick-start/filter"
+            },
+            {
+              "text": "Message Push",
+              "link": "/manual/quick-start/message-push"
+            },
+            {
+              "text": "Remote Control",
+              "link": "/manual/quick-start/remote-control"
+            },
+            {
+              "text": "FAQs",
+              "link": "/manual/quick-start/FAQ"
+            }
+          ]
+        },
+        {
+          "text": "Emulator",
+          "items": [
+            {
+              "text": "Emulator Settings",
+              "link": "/manual/emulator/emulator-settings"
+            },
+            {
+              "text": "Emulator Support",
+              "link": "/manual/emulator/emulator-support"
+            }
+          ]
+        },
+        {
+          "text": "Azur Lane",
+          "items": [
+            {
+              "text": "Game Settings",
+              "link": "/manual/game/game-settings"
+            },
+            {
+              "text": "Knowledge",
+              "link": "/manual/game/azurlane-knowledge"
+            },
+            {
+              "text": "Deprecated Functions",
+              "link": "/manual/game/deprecated"
+            }
+          ]
+        }
+      ],
+      "/usage/": [
+        {
+          "text": "",
+          "items": [
+            {
+              "text": "Overview",
+              "link": "/usage/"
+            }
+          ]
+        },
+        {
+          "text": "Alas",
+          "items": [
+            {
+              "text": "Alas Settings",
+              "link": "/usage/alas/alas-settings"
+            },
+            {
+              "text": "General Settings",
+              "link": "/usage/alas/general-settings"
+            },
+            {
+              "text": "Restart Settings",
+              "link": "/usage/alas/restart-settings"
+            },
+            {
+              "text": "Filter",
+              "items": [
+                {
+                  "text": "Commission Filter",
+                  "link": "/usage/alas/filter/commission-filter"
+                },
+                {
+                  "text": "Research Filter",
+                  "link": "/usage/alas/filter/research-filter"
+                },
+                {
+                  "text": "Tactical Filter",
+                  "link": "/usage/alas/filter/tactical-filter"
+                },
+                {
+                  "text": "Shop Filter",
+                  "link": "/usage/alas/filter/shop-filter"
+                },
+                {
+                  "text": "Enhance Filter",
+                  "link": "/usage/alas/filter/enhance-filter"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Farm",
+          "items": [
+            {
+              "text": "Campaign",
+              "link": "/usage/farm/campaign"
+            },
+            {
+              "text": "Gems Farming",
+              "link": "/usage/farm/gems-farming"
+            },
+            {
+              "text": "Sos",
+              "link": "/usage/farm/sos"
+            }
+          ]
+        },
+        {
+          "text": "Event",
+          "items": [
+            {
+              "text": "Event General Settings",
+              "link": "/usage/event/event-general"
+            },
+            {
+              "text": "Event",
+              "link": "/usage/event/event"
+            },
+            {
+              "text": "Raid",
+              "link": "/usage/event/raid"
+            },
+            {
+              "text": "Coalition",
+              "link": "/usage/event/coalition"
+            },
+            {
+              "text": "Maritime Escort",
+              "link": "/usage/event/maritime-escort"
+            },
+            {
+              "text": "War Archives",
+              "link": "/usage/event/war-archives"
+            },
+            {
+              "text": "Event Daily",
+              "items": [
+                {
+                  "text": "Event Daily A | B | C | D | SP",
+                  "link": "/usage/event/daily/event"
+                },
+                {
+                  "text": "Raid Daily",
+                  "link": "/usage/event/daily/raid"
+                },
+                {
+                  "text": "Frostfall Daily SP",
+                  "link": "/usage/event/daily/coalition"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Reward",
+          "items": [
+            {
+              "text": "Commission",
+              "link": "/usage/reward/commission"
+            },
+            {
+              "text": "Tactical",
+              "link": "/usage/reward/tactical"
+            },
+            {
+              "text": "Research",
+              "link": "/usage/reward/research"
+            },
+            {
+              "text": "Dorm",
+              "link": "/usage/reward/dorm"
+            },
+            {
+              "text": "Meowfficer",
+              "link": "/usage/reward/meowfficer"
+            },
+            {
+              "text": "Guild",
+              "link": "/usage/reward/guild"
+            },
+            {
+              "text": "Reward",
+              "link": "/usage/reward/reward"
+            }
+          ]
+        },
+        {
+          "text": "Daily",
+          "items": [
+            {
+              "text": "Daily",
+              "link": "/usage/daily/daily"
+            },
+            {
+              "text": "Hard",
+              "link": "/usage/daily/hard"
+            },
+            {
+              "text": "Exercise",
+              "link": "/usage/daily/exercise"
+            },
+            {
+              "text": "Shop Frequent",
+              "link": "/usage/daily/shop-frequent"
+            },
+            {
+              "text": "Shop Once",
+              "link": "/usage/daily/shop-once"
+            },
+            {
+              "text": "Shipyard",
+              "link": "/usage/daily/shipyard"
+            },
+            {
+              "text": "Gacha",
+              "link": "/usage/daily/gacha"
+            },
+            {
+              "text": "Freebies",
+              "link": "/usage/daily/freebies"
+            }
+          ]
+        },
+        {
+          "text": "Operation Siren",
+          "items": [
+            {
+              "text": "Opsi General Settings",
+              "link": "/usage/opsi/general"
+            },
+            {
+              "text": "Ash Beacon",
+              "link": "/usage/opsi/ash-beacon"
+            },
+            {
+              "text": "OpSi Ash Assist",
+              "link": "/usage/opsi/ash-assist"
+            },
+            {
+              "text": "OpSi Explore",
+              "link": "/usage/opsi/explore"
+            },
+            {
+              "text": "OpSi Shop",
+              "link": "/usage/opsi/shop"
+            },
+            {
+              "text": "OpSi Voucher",
+              "link": "/usage/opsi/voucher"
+            },
+            {
+              "text": "OpSi Daily",
+              "link": "/usage/opsi/daily"
+            },
+            {
+              "text": "Obscure Zones",
+              "link": "/usage/opsi/obscure"
+            },
+            {
+              "text": "Abyssal Zones",
+              "link": "/usage/opsi/abyssal"
+            },
+            {
+              "text": "Archive Zones",
+              "link": "/usage/opsi/archive"
+            },
+            {
+              "text": "Siren Strongholds",
+              "link": "/usage/opsi/stronghold"
+            },
+            {
+              "text": "Month Boss",
+              "link": "/usage/opsi/month-boss"
+            },
+            {
+              "text": "Meowfficer Farming",
+              "link": "/usage/opsi/meowfficer-farming"
+            },
+            {
+              "text": "CL1 Leveling",
+              "link": "/usage/opsi/hazard-1-leveling"
+            },
+            {
+              "text": "Cross Month Daily",
+              "link": "/usage/opsi/cross-mouth"
+            }
+          ]
+        },
+        {
+          "text": "Tools",
+          "items": [
+            {
+              "text": "Updater",
+              "link": "/usage/tool/updater"
+            },
+            {
+              "text": "Remote Control",
+              "link": "/usage/tool/remote-control"
+            },
+            {
+              "text": "Normal Semi-auto",
+              "link": "/usage/tool/daemon"
+            },
+            {
+              "text": "OpSi Semi-auto",
+              "link": "/usage/tool/opsi-daemon"
+            },
+            {
+              "text": "Performance Test",
+              "link": "/usage/tool/benchmark"
+            },
+            {
+              "text": "Uncensored Patch",
+              "link": "/usage/tool/uncensored"
+            },
+            {
+              "text": "Game Manager",
+              "link": "/usage/tool/game-manager"
+            }
+          ]
+        }
+      ],
+      "/develop/": [
+        {
+          "text": "",
+          "items": [
+            {
+              "text": "Overview",
+              "link": "/develop/"
+            }
+          ]
+        },
+        {
+          "text": "Get Started",
+          "items": [
+            {
+              "text": "Start",
+              "link": "/develop/start"
+            },
+            {
+              "text": "Beginner",
+              "items": [
+                {
+                  "text": "Debugging",
+                  "link": "/develop/beginner/debugging"
+                },
+                {
+                  "text": "Multi-server Support",
+                  "link": "/develop/beginner/multi-server-support"
+                }
+              ]
+            },
+            {
+              "text": "Elementary",
+              "items": [
+                {
+                  "text": "Utils",
+                  "link": "/develop/elementary/utils"
+                },
+                {
+                  "text": "Decorators",
+                  "link": "/develop/elementary/decorators"
+                },
+                {
+                  "text": "Logger",
+                  "link": "/develop/elementary/log"
+                },
+                {
+                  "text": "Exception",
+                  "link": "/develop/elementary/exception"
+                }
+              ]
+            },
+            {
+              "text": "Intermediate",
+              "items": [
+                {
+                  "text": "Detection",
+                  "link": "/develop/intermediate/detection"
+                },
+                {
+                  "text": "UI Control",
+                  "link": "/develop/intermediate/ui-control"
+                },
+                {
+                  "text": "OCR",
+                  "link": "/develop/intermediate/ocr"
+                }
+              ]
+            },
+            {
+              "text": "Advance",
+              "items": [
+                {
+                  "text": "Local Map",
+                  "link": "/develop/advance/local-map"
+                },
+                {
+                  "text": "Create Globe Map",
+                  "link": "/develop/advance/create-globe-map"
+                },
+                {
+                  "text": "Globe Map",
+                  "link": "/develop/advance/globe-map"
+                }
+              ]
+            },
+            {
+              "text": "Alas GUI",
+              "items": [
+                {
+                  "text": "Generate GUI Settings",
+                  "link": "/develop/gui/gui-option"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Documentation",
+          "items": [
+            {
+              "text": "API Example",
+              "link": "/develop/doc/api-exp"
+            },
+            {
+              "text": "Markdown Example",
+              "link": "/develop/doc/md-exp"
+            }
+          ]
+        }
+      ],
+      "/api/": [
+        {
+          "text": "",
+          "items": [
+            {
+              "text": "Overview",
+              "link": "/api/"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
