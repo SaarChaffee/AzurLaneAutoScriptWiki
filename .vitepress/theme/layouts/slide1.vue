@@ -41,6 +41,9 @@ const { frontmatter } = useData()
   h1 {
     line-height: 1.5;
     font-size: 3rem;
+    @media (max-width: 600px) {
+      font-size: 2.2rem;
+    }
   }
 
   svg {
@@ -59,6 +62,10 @@ const { frontmatter } = useData()
     line-height: 2;
     font-size: 16px;
 
+    @media (max-width: 600px) {
+      font-size: 0.75rem;
+    }
+
     br {
       @media (min-width: 600px) {
         display: none;
@@ -76,6 +83,7 @@ const { frontmatter } = useData()
     @media (max-width: 600px) {
       margin: 4rem 0 0 0;
       flex-direction: column;
+      text-align: center;
     }
 
     .action-button {
