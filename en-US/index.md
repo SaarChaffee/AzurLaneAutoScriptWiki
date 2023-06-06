@@ -10,7 +10,7 @@ home:
   desc: Take over almost all Azur Lane gameplay.
   start: Get Started
   download: Download
-  demo: Demo
+  demo: Online Demo
 
 features:
   - title: Stable operation
