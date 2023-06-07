@@ -1,3 +1,1 @@
-::: warning
-Only for CN.
-:::
+# 反和谐

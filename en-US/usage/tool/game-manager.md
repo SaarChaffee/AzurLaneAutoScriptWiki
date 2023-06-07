@@ -1,3 +1,5 @@
+# 游戏管理器
+
 ::: danger
-This function is still working in progress.
+此功能仍在开发中。
 :::
