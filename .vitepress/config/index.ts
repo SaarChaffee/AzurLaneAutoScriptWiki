@@ -17,10 +17,8 @@ export default defineConfig({
   },
 
   themeConfig: {
+    indexName: 'docs',
     logo: '/icon.ico',
-    editLink: {
-      pattern: "https://github.com/koishijs/docs/edit/main/:path"
-    },
     socialLinks: {
       github: 'https://github.com/LmeSzinc/AzurLaneAutoScript',
     },
