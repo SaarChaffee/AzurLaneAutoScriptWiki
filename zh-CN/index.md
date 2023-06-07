@@ -48,6 +48,8 @@ footer:
 
   - text: 交流
     items:
+      - text: QQ 一群 (已满)
+        link: https://jq.qq.com/?_wv=1027&k=I4NSqX7g
       - text: QQ 二群
         link: https://jq.qq.com/?_wv=1027&k=FUIOAAOm
       - text: QQ 三群
