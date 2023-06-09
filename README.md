@@ -1,7 +1,7 @@
 # [Alas-Wiki](https://alas-wiki.saarcenter.com)
 
-这是 [Alas](https://github.com/LmeSzinc/AzurLaneAutoScript) 的官方文档仓库.
-
+这是 [Alas](https://github.com/LmeSzinc/AzurLaneAutoScript) 的官方文档仓库。
+文档仍在迁移中，如有需求请使用[原文档](https://github.com/LmeSzinc/AzurLaneAutoScript/wiki)。
 
 ## 许可证
 
