@@ -1,9 +1,10 @@
 import { defineConfig } from '@koishijs/vitepress'
+import highlight from '../theme/highlight'
 
 const isDev = process.env.NODE_ENV === 'development' || process.env.VERCEL_ENV === 'preview'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default async () => defineConfig({
 
   title: 'AzurLaneAutoScript',
 
@@ -22,6 +23,10 @@ export default defineConfig({
     socialLinks: {
       github: 'https://github.com/LmeSzinc/AzurLaneAutoScript',
     },
+  },
+
+  markdown: {
+    highlight: await highlight('one-dark-pro'),
   },
 
   vite: {
