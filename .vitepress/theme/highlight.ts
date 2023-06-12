@@ -39,9 +39,12 @@ const alias = {
   conda: 'sh',
   python: 'sh',
   docker: 'sh',
+  podman: 'sh',
   venv: 'sh',
   macos: 'sh',
-  normal: 'sh'
+  normal: 'sh',
+  dpkg: 'sh',
+  rpm: 'sh'
 }
 
 const tokens = {
