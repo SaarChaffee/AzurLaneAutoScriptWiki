@@ -23,9 +23,9 @@ next:
 
 双击打开 `Alas.exe`，自动安装程序将完成从获取更新，安装环境到准备 ADB 的步骤。自动安装视网络环境通常需要花费 2 - 3 分钟不等，期间请耐心等待。安装完成后，Alas 桌面端将自动打开。
 
-![](/manual/install/automatic/install.png)
+![](/manual/install/windows/install.png)
 
-![](/manual/install/automatic/home.png)
+![](/manual/install/windows/home.png)
 
 ### 开始使用
 
@@ -43,7 +43,7 @@ next:
 >|      UPDATE FAILED      |
 >+-------------------------+
 >```
->![](/manual/install/automatic/error-code-128.jpg)
+>![](/manual/install/windows/error-code-128.jpg)
 > 这是因为与 Git 源连接不稳定导致的，请确保选择了可以稳定连接的镜像源。官方镜像源如有问题请通过[交流平台](../#交流平台)联系我们。
 
 > ```sh
@@ -51,7 +51,7 @@ next:
 >ERROR: No matching distribution found for XXX 
 >
 > ```
->![](/manual/install/automatic/pipy-mirror.jpg)
+>![](/manual/install/windows/pipy-mirror.jpg)
 > 这是因为国内的 pypi 镜像不稳定，你可以尝试重新打开 `Alas.exe`。如果问题未能解决，可以尝试其他国内镜像。更换 pypi 镜像方法可以打开 Alas 根目录下的 `console.bat` 运行以下命令：
 > ```sh 
 > python -m deploy.set PypiMirror=新的 pypi 源
