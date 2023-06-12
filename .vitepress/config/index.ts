@@ -9,9 +9,9 @@ export default async () => defineConfig({
   title: 'AzurLaneAutoScript',
 
   locales: {
-    'en-US': require('./en-US'),
     'zh-CN': require('./zh-CN'),
     ...(isDev ? {
+      'en-US': require('./en-US'),
       'ja-JP': require('./ja-JP'),
       'zh-TW': require('./zh-TW'),
     } : {})
