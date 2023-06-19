@@ -127,7 +127,12 @@ cd ./AzurLaneAutoScript
   > pip install --upgrade setuptools -i https://pypi.tuna.tsinghua.edu.cn/simple
   > ```
 
-4. 至此，已经完成了 Alas 的安装，可以开始使用或者开发了！
+4. 创建配置文件
+
+    ```sh
+    cp config/deploy.template-linux-cn.yaml config/deploy.yaml
+    ```
+5. 至此，已经完成了 Alas 的安装，可以开始使用或者开发了！
 
 ## 从源码安装 python
 

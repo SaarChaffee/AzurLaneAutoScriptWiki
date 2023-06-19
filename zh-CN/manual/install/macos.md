@@ -47,7 +47,7 @@ cd ./AzurLaneAutoScript
 3. 安装依赖，这里以清华源为例
 
     ```sh
-    pip install -r ./requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install -r .deploy/headless/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
     ```
     :::warning
     注意！在 ARM 环境下，为了让 Alas 能 native 运行，在安装完依赖后，还需要替换 mxnet。X86 及 AMD64 用户不需要看这一段。
@@ -89,11 +89,14 @@ cd ./AzurLaneAutoScript
 
     在 [这里](https://developer.android.com/studio/releases/platform-tools) 获取最新的 ADB，并把它配置于环境变量中。
 
-    由于新版 MacOS 不支持直接将文件放入/usr/bin中，提供两种结局方案：
+    由于新版 MacOS 不支持直接将文件放入 /usr/bin中，提供两种结局方案：
 
     - 关闭SIP文件保护系统后再放进去（不推荐，故不进行教学）。
     - 放入任意文件夹然后将该文件夹加入环境变量。
 
-    ​如：我在`/Users/你的用户名`下创建文件夹`bin`存放adb，则在环境变量文件中添加`PATH=$HOME/bin/:$PATH` 即可。注意，不要遗漏最后的 `:$PATH`！
+    ​如：我在`/Users/你的用户名`下创建文件夹 `bin` 存放 adb，则在环境变量文件中添加 `PATH=$HOME/bin/:$PATH` 即可。注意，不要遗漏最后的 `:$PATH`！
 
-5. 至此，已经完成了 Alas 的安装，可以开始使用或者开发了！
+5. 创建配置
+    复制一份带有 template 的配置文件并重命名为 `deploy.yaml`。根据你的实际情况修改其中的配置，包括 git、python、adb 等可执行文件的路径。
+
+6. 至此，已经完成了 Alas 的安装，可以开始使用或者开发了！
