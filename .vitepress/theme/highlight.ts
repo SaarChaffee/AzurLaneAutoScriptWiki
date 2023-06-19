@@ -44,7 +44,8 @@ const alias = {
   macos: 'sh',
   normal: 'sh',
   dpkg: 'sh',
-  rpm: 'sh'
+  rpm: 'sh',
+  pacman: 'sh'
 }
 
 const tokens = {
