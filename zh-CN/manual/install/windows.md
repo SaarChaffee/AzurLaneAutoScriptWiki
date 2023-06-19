@@ -35,7 +35,7 @@ next:
 
 > #### 我的杀毒软件称 Alas.exe 是病毒
 >
-> 添加至白名单即可。Alas.exe 是一个由 bat 打包而成的 exe，可能会有杀毒软件误报。如果你不放心，可以使用 `deploy/install/Alas.bat` 替换 `Alas.exe`，它们的功能是一样的。
+> 添加至白名单即可。Alas.exe 是一个由 bat 打包而成的 exe，可能会有杀毒软件误报。如果你不放心，可以使用 `deploy/install` 下的 `Alas.bat` 替换 `Alas.exe`，它们的功能是一样的。
 
 > ```sh
 >[ failure ], error-code: 128
