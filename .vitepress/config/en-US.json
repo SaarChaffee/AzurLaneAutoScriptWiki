@@ -548,6 +548,10 @@
                   "link": "/develop/gui/gui-option"
                 }
               ]
+            },
+            {
+              "text": "PR steps",
+              "link": "/develop/PR-steps.md"
             }
           ]
         },

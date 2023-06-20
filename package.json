@@ -8,7 +8,7 @@
   },
   "license": "CC-BY-SA-4.0",
   "scripts": {
-    "dev": "vitepress dev --port 8081",
+    "dev": "cross-env NODE_ENV=development vitepress dev --port 8081",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 vitepress build",
     "serve": "vitepress serve --port 8081",
     "preview": "vitepress preview --port 8081"

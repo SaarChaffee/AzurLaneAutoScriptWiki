@@ -548,6 +548,10 @@
                   "link": "/develop/gui/gui-option"
                 }
               ]
+            },
+            {
+              "text": "PR流程简述",
+              "link": "/develop/PR-steps.md"
             }
           ]
         },
