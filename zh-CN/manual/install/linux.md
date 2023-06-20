@@ -281,4 +281,4 @@ Python 3.8.10
 pip 21.1.1 from /usr/local/lib/python3.8/site-packages/pip (puthon 3.8)
 
 ```
-恭喜，你已经成功编译并安装了一个 python！
+恭喜，你已经成功编译并安装了一个 python！接下来可以继续[安装 Alas ](#准备运行所需工具)了。

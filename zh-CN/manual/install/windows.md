@@ -87,16 +87,16 @@ cd ./AzurLaneAutoScript
 
 3. 添加文件夹为 Git 安全文件夹
 
-    如果 Git 版本为 `2.35.2` 或更高，则需要执行以下步骤。详情请参阅[CVE-2022-24765](https://github.com/git-for-windows/git/security/advisories/GHSA-vw2c-22j4-2fh2)。
-    
-    :::tabs code
-    ```powershell
-    git config --global --add safe.directory $pwd
-    ```
-    ```cmd
-    git config --global --add safe.directory %cd%
-    ```
-    :::
+如果 Git 版本为 `2.35.2` 或更高，则需要执行次步骤。详情请参阅[CVE-2022-24765](https://github.com/git-for-windows/git/security/advisories/GHSA-vw2c-22j4-2fh2)。
+
+:::tabs code
+```powershell
+git config --global --add safe.directory $pwd
+```
+```cmd
+git config --global --add safe.directory %cd%
+```
+:::
 ### 准备运行环境
 
 由于 Alas 使用的是 [Python 3.7.6](https://www.python.org/downloads/release/python-376/)，你需要自己安装它，这里我们假定你已经安装完成了。同时我们建议创建新的虚拟环境来运行 Alas，下面会以 Anaconda 和 venv 为例，当然你也可以选择自己喜欢的工具。
