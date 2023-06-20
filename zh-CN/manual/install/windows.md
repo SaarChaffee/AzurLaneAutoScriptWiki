@@ -31,13 +31,14 @@ next:
 ### 开始使用
 
 恭喜你，你已经完成了 Alas 的安装并成功启动，现在你可以开始使用 Alas 了。
-
 ### 自动安装器常见问题
 
 > #### 我的杀毒软件称 Alas.exe 是病毒
 >
 > 添加至白名单即可。Alas.exe 是一个由 bat 打包而成的 exe，可能会有杀毒软件误报。如果你不放心，可以使用 `deploy/install` 下的 `Alas.bat` 替换 `Alas.exe`，它们的功能是一样的。
+>
 
+> #### 更新失败
 > ```sh
 >[ failure ], error-code: 128
 >+-------------------------+
@@ -47,6 +48,7 @@ next:
 >![](/manual/install/windows/error-code-128.jpg)
 > 这是因为与 Git 源连接不稳定导致的，请确保选择了可以稳定连接的镜像源。官方镜像源如有问题请通过[交流平台](../#交流平台)联系我们。
 
+> #### 无法安装xxx依赖
 > ```sh
 >ERROR: Could not finda version that satisfies the requirement XXX
 >ERROR: No matching distribution found for XXX 
