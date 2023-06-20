@@ -37,6 +37,7 @@ const attrsToLines = (attrs: string): HtmlRendererOptions['lineOptions'] => {
 const alias = {
   pip: 'sh',
   conda: 'sh',
+  docker: 'sh',
   podman: 'sh',
   venv: 'sh',
   macos: 'sh',
