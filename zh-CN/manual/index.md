@@ -32,7 +32,7 @@
 
 - 在提问题前，请先阅读 [常见问题(FAQ)](./quick-start/FAQ)。
 - 检查 Alas 的更新和最近的 commit，确认使用的是最新版。
-- 上传出错 log，在 `log/error` 目录下，以毫秒时间戳为文件夹名，包含 log。txt 和最近的截图。若不是错误而是非预期的行为，提供在 `log` 目录下当天的 log和至少一张游戏截图。
+- 上传出错 log，在 `log/error` 目录下，以毫秒时间戳为文件夹名，包含 log。txt 和最近的截图。若不是错误而是非预期的行为，提供在 `log` 目录下当天的 log 和至少一张游戏截图。
 
 
 ## Alas 社区准则
@@ -64,13 +64,13 @@
 
 这些功能旨在激发参与 Alas 开发的兴趣，有机会成为 Alas 贡献者并参与到 Alas 的开发流程、未来规划中，以及更多有价值的内容。
 
-对 `Issues / Pull Request(PR)` 的建议包括：
+对 Issues / Pull Request(PR) 的建议包括：
 
 - 简单的问题请在[以下平台](#交流平台)进行提问
 - 提出Issue前认真填写相关模板，以便开发组可以及时复现问题并修复缺陷
 - 对 Alas 的 **游戏相关** 新内容开发请使用 `dev` 分支，对 Alas 的 **新功能** 开发请使用 `feature` 分支，对 **bug** 的修复请使用 `bug_fix`
-- 为了保护 `master` 分支，止向 `master` 分支提 `Pull Request(PR)`
-- 有关 `Pull Request(PR)` 的操作可以参考 [`Pull Request(PR)`流程](../develop/PR-steps)
+- 为了保护 `master` 分支，止向 `master` 分支提 Pull Request(PR)
+- 有关 Pull Request(PR) 的操作可以参考 [Pull Request(PR)流程](../develop/PR-steps)
 
 
 ### **协议**
