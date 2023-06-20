@@ -79,4 +79,4 @@ podman-compose up -d
 ```
 :::
 
-Alas 容器的网络模式为 host，这能让 Alas 容器内的 ADB 直接访问宿主机上模拟器，同时也能直接通过 http://localhost:22267 访问 Alas 面板。
+Alas 容器的网络模式为 host，这能让 Alas 容器内的 ADB 直接访问宿主机上模拟器，同时也能直接通过 http://127.0.0.1:22267 访问 Alas 面板。
