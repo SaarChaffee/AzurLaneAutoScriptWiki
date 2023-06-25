@@ -127,7 +127,7 @@ sctkey: SCT16*************************
 
 ### Discord Webhook
 
-> [Document](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+> [文档](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
 ```yaml
 provider: discord 
@@ -136,7 +136,7 @@ webhook: https://discord.com/api/webhooks/12345678912345678900/verylongstring_ve
 
 ### Telegram Bot
 
-> [Document](https://core.telegram.org/bots/api#sendmessage)
+> [文档](https://core.telegram.org/bots/api#sendmessage)
 
 ```yaml
 provider: telegram
