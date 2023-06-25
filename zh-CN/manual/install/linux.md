@@ -104,28 +104,26 @@ cd ./AzurLaneAutoScript
     ```
     <hr/>
 
-    #### 依赖安装常见问题
-  >如果你遇到了网络连接问题，重试即可
+  <details>
+  <summary>依赖安装常见问题</summary>
+  如果你遇到了网络连接问题，重试即可
 
-  > 如果你遇到了 pip 需要更新的问题
-  >
-  > ```sh
-  > WARNING: You are using pip version 21.0.1; however, version 21.1.3 is available.
-  > ```
-  >
-  > 可以执行以下命令解决，也可以无视
-  >
-  > ```sh
-  > python -m pip install --upgrade pip
-  > ```
-
-  > ```sh
-  > ERROR: Can not execute `setup.py` since setuptools is not available
-  > ```
-  > 需要安装或更新setuptools
-  > ```sh
-  > pip install --upgrade setuptools -i https://pypi.tuna.tsinghua.edu.cn/simple
-  > ```
+  如果你遇到了 pip 需要更新的问题
+  ```sh
+  WARNING: You are using pip version 21.0.1; however, version 21.1.3 is available.
+  ```
+  可以执行以下命令解决，也可以无视
+  ```sh
+  python -m pip install --upgrade pip
+  ```
+  ```sh
+  ERROR: Can not execute `setup.py` since setuptools is not available
+  ```
+  需要安装或更新setuptools
+  ```sh
+  pip install --upgrade setuptools -i https://pypi.tuna.tsinghua.edu.cn/simple
+  ```
+  </details>
 
 4. 创建配置文件
 

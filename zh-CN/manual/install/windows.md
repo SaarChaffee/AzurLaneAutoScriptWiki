@@ -31,38 +31,38 @@ next:
 ### 开始使用
 
 恭喜你，你已经完成了 Alas 的安装并成功启动，现在你可以开始使用 Alas 了。
-### 自动安装器常见问题
 
-> #### 我的杀毒软件称 Alas.exe 是病毒
->
-> 添加至白名单即可。Alas.exe 是一个由 bat 打包而成的 exe，可能会有杀毒软件误报。如果你不放心，可以使用 `deploy/install` 下的 `Alas.bat` 替换 `Alas.exe`，它们的功能是一样的。
->
+<details>
+<summary>自动安装器常见问题</summary>
 
-> #### 更新失败
-> ```sh
->[ failure ], error-code: 128
->+-------------------------+
->|      UPDATE FAILED      |
->+-------------------------+
->```
->![](/manual/install/windows/error-code-128.jpg)
-> 这是因为与 Git 源连接不稳定导致的，请确保选择了可以稳定连接的镜像源。官方镜像源如有问题请通过[交流平台](../#交流平台)联系我们。
+#### 我的杀毒软件称 Alas.exe 是病毒
+添加至白名单即可。Alas.exe 是一个由 bat 打包而成的 exe，可能会有杀毒软件误报。如果你不放心，可以使用 `deploy/install` 下的 `Alas.bat` 替换 `Alas.exe`，它们的功能是一样的。
 
-> #### 无法安装xxx依赖
-> ```sh
->ERROR: Could not finda version that satisfies the requirement XXX
->ERROR: No matching distribution found for XXX 
->
-> ```
->![](/manual/install/windows/pipy-mirror.jpg)
-> 这是因为国内的 pypi 镜像不稳定，你可以尝试重新打开 `Alas.exe`。如果问题未能解决，可以尝试其他国内镜像。更换 pypi 镜像方法可以打开 Alas 根目录下的 `console.bat` 运行以下命令：
-> ```sh 
-> python -m deploy.set PypiMirror=新的 pypi 源
-> ```
-> - 清华源：`https://pypi.tuna.tsinghua.edu.cn/simple`
-> - 豆瓣源：`https://pypi.douban.com/simple/`
-> - 阿里源：`https://mirrors.aliyun.com/pypi/simple/`
-> - 通过搜索引擎获得更多的国内 pypi 镜像
+#### 更新失败
+ ```sh
+[ failure ], error-code: 128
++-------------------------+
+|      UPDATE FAILED      |
++-------------------------+
+```
+![](/manual/install/windows/error-code-128.jpg)
+ 这是因为与 Git 源连接不稳定导致的，请确保选择了可以稳定连接的镜像源。官方镜像源如有问题请通过[交流平台](../#交流平台)联系我们。
+
+#### 无法安装xxx依赖
+```sh
+ERROR: Could not finda version that satisfies the requirement XXX
+ERROR: No matching distribution found for XXX 
+```
+![](/manual/install/windows/pipy-mirror.jpg)
+ 这是因为国内的 pypi 镜像不稳定，你可以尝试重新打开 `Alas.exe`。如果问题未能解决，可以尝试其他国内镜像。更换 pypi 镜像方法可以打开 Alas 根目录下的 `console.bat` 运行以下命令：
+```sh 
+python -m deploy.set PypiMirror=新的 pypi 源
+```
+- 清华源：`https://pypi.tuna.tsinghua.edu.cn/simple`
+- 豆瓣源：`https://pypi.douban.com/simple/`
+- 阿里源：`https://mirrors.aliyun.com/pypi/simple/`
+- 通过搜索引擎获得更多的国内 pypi 镜像
+</details>
 
 ## 手动安装
 
@@ -144,26 +144,25 @@ git config --global --add safe.directory %cd%
     ```
     <hr/>
 
-    #### 依赖安装常见问题
-  >如果你遇到了网络连接问题，重试即可
+  <details>
+  <summary>依赖安装常见问题</summary>
+  如果你遇到了网络连接问题，重试即可
 
-  > 如果你遇到了 pip 需要更新的问题
-  >
-  > ```sh
-  > WARNING: You are using pip version 21.0.1; however, version 21.1.3 is available.
-  > ```
-  >
-  > 可以执行以下命令解决，也可以无视
-  >
-  > ```sh
-  > python -m pip install --upgrade pip
-  > ```
+  如果你遇到了 pip 需要更新的问题
+  ```sh
+  WARNING: You are using pip version 21.0.1; however, version 21.1.3 is available.
+  ```
+  可以执行以下命令解决，也可以无视
+  ```sh
+  python -m pip install --upgrade pip
+  ```
+  ```sh
+  ERROR: Can not execute `setup.py` since setuptools is not available
+  ```
+  需要安装或更新setuptools
+  ```sh
+  pip install --upgrade setuptools -i https://pypi.tuna.tsinghua.edu.cn/simple
+  ```
+  </details>
 
-  > ```sh
-  > ERROR: Can not execute `setup.py` since setuptools is not available
-  > ```
-  > 需要安装或更新setuptools
-  > ```sh
-  > pip install --upgrade setuptools -i https://pypi.tuna.tsinghua.edu.cn/simple
-  > ```
 4. 至此，已经完成了 Alas 的安装，可以开始使用或者开发了！
