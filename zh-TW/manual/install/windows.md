@@ -166,3 +166,7 @@ git config --global --add safe.directory %cd%
   </details>
 
 4. 至此，已经完成了 Alas 的安装，可以开始使用或者开发了！
+
+    ```sh
+    python gui.py
+    ```

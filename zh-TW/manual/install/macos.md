@@ -98,3 +98,7 @@ cd ./AzurLaneAutoScript
     复制一份带有 template 的配置文件并重命名为 `deploy.yaml`。根据你的实际情况修改其中的配置，包括 git、python、adb 等可执行文件的路径。
 
 6. 至此，已经完成了 Alas 的安装，可以开始使用或者开发了！
+
+    ```sh
+    python gui.py
+    ```
