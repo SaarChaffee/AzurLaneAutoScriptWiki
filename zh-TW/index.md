@@ -2,7 +2,7 @@
 layout: home
 
 links:
-  start: /zh-CN/manual/
+  start: /zh-TW/manual/
   download: https://alas.saarcenter.com/download
   demo: https://alas.azurlane.cloud/demo/
 
@@ -27,27 +27,29 @@ footer:
   - text: 起步
     items:
       - text: 在 Windows 安装
-        link: /zh-CN/manual/install/windows
+        link: /zh-TW/manual/install/windows
       - text: 在 macOS 安装
-        link: /zh-CN/manual/install/macos
+        link: /zh-TW/manual/install/macos
       - text: 在 Linux 安装
-        link: /zh-CN/manual/install/linux
+        link: /zh-TW/manual/install/linux
       - text: 在 Android 安装
-        link: /zh-CN/manual/install/android
+        link: /zh-TW/manual/install/android
       - text: 在容器中使用
-        link: /zh-CN/manual/install/docker
+        link: /zh-TW/manual/install/docker
 
   - text: 文档
     items:
       - text: 入门教程
-        link: /zh-CN/manual/
+        link: /zh-TW/manual/
       - text: 使用文档
-        link: /zh-CN/usage/
+        link: /zh-TW/usage/
       - text: 开发教程
-        link: /zh-CN/develop/
+        link: /zh-TW/develop/
 
   - text: 交流
     items:
+      - text: QQ 一群 (已满)
+        link: https://jq.qq.com/?_wv=1027&k=I4NSqX7g
       - text: QQ 二群
         link: https://jq.qq.com/?_wv=1027&k=FUIOAAOm
       - text: QQ 三群

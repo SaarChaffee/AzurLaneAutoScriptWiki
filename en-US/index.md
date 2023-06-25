@@ -2,8 +2,8 @@
 layout: home
 
 links:
-  start: /eu-US/manual/
-  download: https://github.com/LmeSzinc/AzurLaneAutoScript/releases
+  start: /en-US/manual/
+  download: https://alas.saarcenter.com/download
   demo: https://alas.azurlane.cloud/demo/
 
 home:
@@ -27,24 +27,24 @@ footer:
   - text: Get Started
     items:
       - text: Install on Windows
-        link: /eu-US/manual/install/windows
+        link: /en-US/manual/install/windows
       - text: Install on MacOS
-        link: /eu-US/manual/install/macos
+        link: /en-US/manual/install/macos
       - text: Install on Linux
-        link: /eu-US/manual/install/linux
+        link: /en-US/manual/install/linux
       - text: Install on Android
-        link: /eu-US/manual/install/android
+        link: /en-US/manual/install/android
       - text: Use in Docker
-        link: /eu-US/manual/install/docker
+        link: /en-US/manual/install/docker
 
   - text: Documentation
     items:
       - text: Getting Started Tutorial
-        link: /eu-US/manual/
+        link: /en-US/manual/
       - text: Usage Documentation
-        link: /eu-US/usage/
+        link: /en-US/usage/
       - text: Development
-        link: /eu-US/develop/
+        link: /en-US/develop/
 
   - text: Communication
     items:
@@ -55,4 +55,3 @@ footer:
 
 
 ---
-

@@ -105,6 +105,7 @@
         },
         {
           "text": "Get Started",
+          "link": "/manual/quick-start/",
           "items": [
             {
               "text": "Directory Structure",
@@ -115,7 +116,7 @@
               "link": "/manual/quick-start/ui"
             },
             {
-              "text": "Config",
+              "text": "Basic Config",
               "link": "/manual/quick-start/config"
             },
             {
@@ -144,11 +145,7 @@
           "text": "Emulator",
           "items": [
             {
-              "text": "Emulator Settings",
-              "link": "/manual/emulator/emulator-settings"
-            },
-            {
-              "text": "Emulator Support",
+              "text": "Devices Support",
               "link": "/manual/emulator/emulator-support"
             }
           ]
@@ -198,6 +195,7 @@
             },
             {
               "text": "Filter",
+              "link": "/usage/alas/filter/",
               "items": [
                 {
                   "text": "Commission Filter",
@@ -548,6 +546,10 @@
                   "link": "/develop/gui/gui-option"
                 }
               ]
+            },
+            {
+              "text": "PR steps",
+              "link": "/develop/PR-steps.md"
             }
           ]
         },

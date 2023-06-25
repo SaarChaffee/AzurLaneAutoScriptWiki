@@ -12,7 +12,7 @@
       "link",
       {
         "rel": "manifest",
-        "href": "/manifest/zh-CN.json"
+        "href": "/manifest/ja-JP.json"
       }
     ],
     [
@@ -105,6 +105,7 @@
         },
         {
           "text": "快速上手",
+          "link": "/manual/quick-start/",
           "items": [
             {
               "text": "目录内容",
@@ -115,7 +116,7 @@
               "link": "/manual/quick-start/ui"
             },
             {
-              "text": "配置",
+              "text": "基础配置",
               "link": "/manual/quick-start/config"
             },
             {
@@ -144,11 +145,7 @@
           "text": "模拟器相关",
           "items": [
             {
-              "text": "模拟器设置",
-              "link": "/manual/emulator/emulator-settings"
-            },
-            {
-              "text": "模拟器支持",
+              "text": "设备支持文档",
               "link": "/manual/emulator/emulator-support"
             }
           ]
@@ -198,6 +195,7 @@
             },
             {
               "text": "过滤器",
+              "link": "/usage/alas/filter/",
               "items": [
                 {
                   "text": "委托过滤器",
@@ -548,6 +546,10 @@
                   "link": "/develop/gui/gui-option"
                 }
               ]
+            },
+            {
+              "text": "PR流程简述",
+              "link": "/develop/PR-steps.md"
             }
           ]
         },
