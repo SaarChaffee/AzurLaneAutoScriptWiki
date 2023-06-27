@@ -3,8 +3,8 @@ prev:
   text: 介绍
   link: /zh-CN/manual/
 next:
-  text: 目录内容
-  link: /zh-CN/manual/quick-start/folder
+  text: 快速上手
+  link: /zh-CN/manual/quick-start/
 ---
 
 # 在 Linux 中安装
