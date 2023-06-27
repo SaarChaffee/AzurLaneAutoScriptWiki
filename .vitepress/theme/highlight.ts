@@ -1,8 +1,11 @@
 // modified from https://github.com/vuejs/vitepress/blob/283407d072353a77ee0939a71a1f2a35e953eb7d/src/node/markdown/plugins/highlight.ts
-
-import { getHighlighter, HtmlRendererOptions, IThemeRegistration } from 'shiki'
+import { HtmlRendererOptions, IThemeRegistration } from 'shiki'
 import MarkdownIt from 'markdown-it'
-
+import {
+  createFocusProcessor,
+  getHighlighter,
+  type Processor
+} from 'shiki-processor'
 /**
  * 2 steps:
  *
@@ -18,19 +21,17 @@ const attrsToLines = (attrs: string): HtmlRendererOptions['lineOptions'] => {
   }
   attrs
     .split(',')
-    .map((v) => v.split('-').map((v) => parseInt(v, 10)))
+    .map(v => v.split('-').map(v => parseInt(v, 10)))
     .forEach(([start, end]) => {
       if (start && end) {
-        result.push(
-          ...Array.from({ length: end - start + 1 }, (_, i) => start + i),
-        )
+        result.push(...Array.from({ length: end - start + 1 }, (_, i) => start + i))
       } else {
         result.push(start)
       }
     })
-  return result.map((v) => ({
+  return result.map(v => ({
     line: v,
-    classes: ['highlighted'],
+    classes: ['highlighted']
   }))
 }
 
@@ -57,7 +58,7 @@ const tokens = {
   '#C678DD': 'keyword',
   '#E06C75': 'parameter',
   '#61AFEF': 'function',
-  '#56B6C2': 'operator',
+  '#56B6C2': 'operator'
 }
 
 const colorRE = / style="color: ?(#[0-9a-fA-F]{6})"/g
@@ -66,11 +67,16 @@ export default async function highlight(theme: string): Promise<MarkdownIt.Optio
   const getThemeName = (themeValue: IThemeRegistration) =>
     typeof themeValue === 'string' ? themeValue : themeValue.name
 
+  const processors: Processor[] = [
+    createFocusProcessor()
+  ]
+
   const highlighter = await getHighlighter({
     themes: [theme],
+    processors
   })
-  const vueRE = /-vue$/
 
+  const vueRE = /-vue$/
   return (code: string, lang: string, attrs: string) => {
     const vPre = vueRE.test(lang) ? '' : 'v-pre'
     lang = lang.replace(vueRE, '').toLowerCase()
@@ -81,13 +87,18 @@ export default async function highlight(theme: string): Promise<MarkdownIt.Optio
       .trim()
 
     const lineOptions = attrsToLines(attrs)
-
-    return highlighter
-      .codeToHtml(code, { lang, lineOptions, theme: getThemeName(theme) })
-      .replace(/^<pre.*?>/, `<pre ${vPre}>`)
-      .replace(colorRE, (match, color) => {
-        const token = tokens[color.toUpperCase()]
-        return token ? ` style="color: var(--shiki-token-${token})"` : match
-      })
+    
+    return (
+      highlighter
+        .codeToHtml(code, { lang, lineOptions, theme: getThemeName(theme) })
+        .replace(/^<pre.*?>/, (match) => {
+          return `<pre ${match.includes('has-focused-lines') ? 'class="has-focused-lines" ' : ''} ${vPre}>`
+        })
+        // .replace(/style="[^"]*"/g, '')
+        .replace(colorRE, (match, color) => {
+          const token = tokens[color.toUpperCase()]
+          return token ? ` style="color: var(--shiki-token-${token})"` : match
+        })
+    )
   }
 }
