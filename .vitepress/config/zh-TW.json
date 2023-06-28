@@ -138,6 +138,10 @@
             {
               "text": "常见问题",
               "link": "/manual/quick-start/FAQ"
+            },
+            {
+              "text": "常见错误",
+              "link": "/manual/quick-start/normal-errors"
             }
           ]
         },

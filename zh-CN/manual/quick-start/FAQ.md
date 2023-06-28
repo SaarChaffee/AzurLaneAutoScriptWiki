@@ -2,165 +2,99 @@
 
 这里列举了一些常见问题。
 
+## 如何修改 Alas 源以及分支
 
-## Alas 白屏 ([#876](https://github.com/LmeSzinc/AzurLaneAutoScript/issues/876))
-由未知原因引起的问题. (~~Electron 特性~~)
+首先在 Alas 下的 `config` 文件夹中找到 `deploy.yaml` 文件
 
-可以尝试以下操作:
- - Ctrl + R 刷新
- - 打开 Alas 根目录下的 `console.bat` 或者任何命令行终端，运行命令 [`netsh winsock reset`](https://support.microsoft.com/zh-cn/windows/%E4%BF%AE%E5%A4%8D-windows-%E4%B8%AD%E7%9A%84%E4%BB%A5%E5%A4%AA%E7%BD%91%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98-2311254e-cab8-42d6-90f3-cb0b9f63645f) 并重启电脑
- - 在 `config/deploy.yaml` 中禁用 reload ([`EnableReload: false`](https://github.com/LmeSzinc/AzurLaneAutoScript/blob/master/config/deploy.template.yaml#L88-L91))
- - 重装 Alas
- - 1. 打开位于 Alas 根目录下的 `console.bat`，键入 `python gui.py` 后回车
-   2. 当出现 `Uvicorn running on http://0.0.0.0:22267 (Press CTRL+C to quit)` 时在浏览器中打开 http://127.0.0.1:22267
-   3. 通过这种方式启动，使用 Alas 时不要关闭 `console.bat` 的窗口
+以记事本或者你喜欢的编辑器打开，我们只需要关注高亮的几行：
 
-## Alas 引导完成后闪退 ([#2481](https://github.com/LmeSzinc/AzurLaneAutoScript/issues/2481))
-由未知原因引起的问题. (~~Electron 特性~~)
-
-将会在未来某个版本修复。
-
-目前已知的解决办法
- - 1. 打开位于 Alas 根目录下的 `console.bat`，键入 `python gui.py` 后回车
-   2. 当出现 `Uvicorn running on http://0.0.0.0:22267 (Press CTRL+C to quit)` 时在浏览器中打开 http://127.0.0.1:22267
-   3. 通过这种方式启动，使用 Alas 时不要关闭 `console.bat` 的窗口
-
-<hr/>
-
- - 1. 打开 Alas 根目录下的 `\toolkit\WebApp` 文件夹，右键 `alas.exe` 创建桌面快捷方式. 回到桌面，右键刚刚创建的快捷方式，打开属性
-   1. 在 `目标(T)` 的输入路径的最后面(按`PageUp`可快速到达)加上 ` --no-sandbox`，注意不要遗漏前面的空格
-   2. 在 `起始位置(S)` 的输入框中，你会看到如 `D:\...\AzurLaneAutoScript\toolkit\WebApp` 的路径，删除 `\toolkit\WebApp`，确保路径只到 Alas 的根目录文件夹
-   3. 通过这个快捷方式启动 Alas
-
-
-![Desktop 2023 05 29 - 12 04 08 02 00_00_00-00_00_30~1](/manual/quick-start/FAQ/whitescreen1.gif)
-
-
-![8867](/manual/quick-start/FAQ/whitescreen2.gif)
-
-
-## 舰队心情不足导致无法继续出击 ([#1849](https://github.com/LmeSzinc/AzurLaneAutoScript/issues/1849))
-
-以下情况会导致心情计算错误：
-
-  - 手动玩过游戏，Alas 无法追踪。
-  - 出击沉船扣 10 心情。
-  - Alas 内设置与游戏内不符，例如设置了后宅二楼但是有一艘忘记放进二楼。
-  - 多个任务之间共享同一个角色。
-
-出现心情计算错误时需要：
-- 在游戏内后宅查看心情最低的角色的心情值，手动填入 Alas 内的心情设置中。
-
-![Not enough fleet emotions](/manual/quick-start/FAQ/201313401-1eed6178-bf4d-411d-950e-74ab6fbef1c6.png)
-
-## 没有符合委托要求的角色导致无法开始委托 ([#2460](https://github.com/LmeSzinc/AzurLaneAutoScript/issues/2460))
-
-这是游戏策划的问题: 高级委托在玩家有一艘100级船的时候就会推送，但委托又不能指派队伍中的角色。
-
-避免这个问题有以下方式：
-
-- 将更多的船提升到 100 级。
-- 清空所有困难图编队，只保留每日困难打的困难图的编队。
-- 清空活动 CD 图编队，只保留要打的图的编队。
-- 清空共斗编队，限界挑战编队等特殊活动的编队（如果有的话）。
-
-![](/manual/quick-start/FAQ/230404498-2b5a07d8-fd2f-4a32-a80a-4fec6a911dc8.png)
-![](/manual/quick-start/FAQ/230404599-2ebb89bd-b8f5-4898-b255-99731c64336c.png)
-## 月度开荒报错 ([#2511](https://github.com/LmeSzinc/AzurLaneAutoScript/issues/2511))
-
-```shell
-
-YYYY-MM-DDTHH:mm:ss.sssZ | WARNING | Zone [xxx|XXXX] locked，neighbouring zones may not have been explored
-
+```yaml{6,10,18:line-numbers}
+Deploy:
+  Git:
+    # URL of AzurLaneAutoScript repository
+    # [CN user] Use 'git://git.lyoko.io/AzurLaneAutoScript' for faster and more stable download
+    # [Other] Use 'https://github.com/LmeSzinc/AzurLaneAutoScript'
+    Repository: https://github.com/LmeSzinc/AzurLaneAutoScript // [!code focus] 
+    # Branch of Alas
+    # [Developer] Use 'dev', 'app', etc, to try new features
+    # [Other] Use 'master', the stable branch
+    Branch: master  // [!code focus]
+    # Filepath of git executable `git.exe`
+    # [Easy installer] Use './toolkit/Git/mingw64/bin/git.exe'
+    # [Other] Use you own git
+    GitExecutable: ./toolkit/Git/mingw64/bin/git.exe 
+    # Set git proxy
+    # [CN user] Use your local http proxy (http://127.0.0.1:{port}) or socks5 proxy (socks5://127.0.0.1:{port})
+    # [Other] Use null
+    GitProxy: null  // [!code focus]
 ```
+### Repository
+即为你所需要更换的 Alas 源。你需要注意以下内容：
 
-`XXXX` 附近的某个海域无法完成。这通常是因为没有按要求修改游戏设置，特别是 `自律时自动提交道具` 的选项，或者是海域内有模拟战未完成。解决办法：
-- 修改 [游戏设置](../game/game-settings.md)。
-- 将 `上一次完成的区域` 设置清空，重新运行即可。
+1. 如果你有能力连接 Github，建议使用 Github 源：`https://github.com/LmeSzinc/AzurLaneAutoScript`，同时不要忘记在 `GitProxy` 配置稳定的代理。
+2. 如果你没有能力连接 Github，或者想自动更新时快一些，建议使用 CN 源。默认 CN 源为 `git://git.lyoko.io/AzurLaneAutoScript`，当然你也可以在注释中找到它。
 
-# 以下部分问题已经过时，仅供参考
+### Branch
+为你当前源的分支。正常情况下不需要修改。
+::: danger
+除非你知道自己在做什么否则不要修改。
+:::
 
-## 为什么Alas不运行
+## 如何查询 ADB/Serial
 
-```shell
+在 Alas 的文件夹里有 `console.bat` 文件  
+![Console_Path](/manual/quick-start/faq/Console_Path.png)
+打开它，之后输入 `adb devices`
+将会显示当前可用的地址。填写到 Alas 里对应的栏目里即可。
 
-INFO | No task pending
-INFO | Wait until 2021-10-27 21:10:54 for task `Commission`
-
+```sh{3}
+>>>adb devices
+List of devices attached
+127.0.0.1:16416 device
 ```
+## 可以关闭科研/委托吗
 
-因为 Alas 已经完成了所有任务，现在无事可干，只能等待委托科研等结束。
+不可以，这些是 Alas 的**重要基础功能**，使用一个没这些功能的 Alas 真不如去使用其他游玩方式了，您如果因为这些功能遇到了困扰，请描述你的详细情况寻求帮助。
 
-```shell
+## 如何设置开荒
 
-CRITICAL | No task waiting or pending
-CRITICAL | Please enable at least one task
+这里以主线图为例：
 
-```
+1. 在`停止条件`下的`达成关卡成就后停止`中选择`100%通关`或`100%通关+三星`
+![Set_Stop_Condition](/manual/quick-start/faq/Set_Stop_Condition.png)
 
-正如 log 里描述的，你需要开启至少一项任务才能开始运行。
+2. 勾选`达成关卡成就后向前开荒`
+![Set_Forword](/manual/quick-start/faq/Set_Forword.png)
 
+## 新的活动图为何选不了
 
+开发需要时间更新适配并检查，**请耐心等待一至两天**。
 
-## 为什么Alas卡在心情回复里
+## 如何贪绿闪/贪绿闪是什么
 
-```shell
+绿闪：
+ - 放于后宅的舰船在一定心情下会获得经验加成（**心情>120**）
 
-INFO | Click ( 507，457) @ C3
-INFO | Combat preparation。
-INFO | [Emotion recovered] 2020-06-26 23:42:00
-INFO | [Emotion recovered] 2020-06-26 23:42:00
-INFO | [Emotion recovered] 2020-06-26 23:42:00
+使用 Alas 贪绿闪具体操作如下：
+1. 将你刷图用的舰娘全部放于**后宅一楼/二楼**。
+2. 在`心情设置`中将`X队心情控制`更改为`保持经验加成（>120）`，并设置`X队心情回复`为`后宅一楼/二楼`。这里我们以第一队为例：
+![Set_Emotion](/manual/quick-start/faq/Set_Emotion.png)
 
-```
+:::warning
+Alas 的心情设置是根据出击频率计算的，而不是读取你的账号数据。因此请保证设置的准确性，**不要多个任务共用同一编队/舰娘**
+:::
 
-因为Alas正在等待心情回复。
+## 大型作战（大世界）任务如何设置
 
-如果你认为这不是你希望的，请检查你的"心情设置". 如果你希望红脸出击，关掉"启用心情消耗"，并开启"无视红脸出击警告". 如果你手动调整了队伍，在 `心情设置` 中更新 `心情值`。
+首先，使用此功能前必须满足以下条件：
 
-## 怎样同时运行主线图出击和收获
+- 通关大世界 **主线任务** + **模拟战**：点开`任务列表`，出现`月度BOSS`即为完成。
 
+启动除`侵蚀1练级`以外所有大型作战功能，之后只需要保持 Alas 尽可能长时间运行即可，无需去管 Alas 是如何运行大型作战的
 
-你不需要做任何操作，这是自动的
+## 侵蚀 1 练级是什么
 
-当你运行"主线图"，"活动图"，"共斗活动"的时候，Alas会根据设置，时不时地检查收获。
-
-
-
-## 不支持从当前界面启动
-
-```shell
-
-INFO | <<< UI ENSURE >>>
-INFO | Unknown ui page
-INFO | Unable to goto page_main
-WARNING | Starting from current page is not supported
-WARNING | Supported page: ['page_main'，'page_campaign'，'page_fleet'，'page_exercise'，'page_daily'，'page_event'，'page_sp'，'page_mission'，'page_raid']
-WARNING | Supported page: Any page with a "HOME" button on the upper-right
-
-```
-
-请检查你在启动Alas时的游戏界面。
-
-Alas可以自动切换到需要的游戏界面，但是只允许在这些界面下启动: 主界面，出击，编队，演习，每日，活动，SP活动，任务领取，共斗活动. Alas也可以在右上角有"一键回港"按钮的界面下启动，游戏中大部分界面都有这个按钮，除了主界面本身，后宅，指挥喵。
-
-
-
-## 为什么我打开另一个模拟器时Alas会断开连接
-
-```shell
-
-adb server version (36) doesn't match this client (41); killing..。
-
-```
-
-
-因为你有两个不同版本的ADB
-
-不同版本的ADB之间会互相结束对方. 国产模拟器 (夜神模拟器，雷电模拟器，逍遥模拟器，MuMu模拟器) 都会使用自己的ADB，而不会使用配置在环境变量中的ADB. 所以当它们启动时，就会结束Alas正在使用的 adb.exe. 解决这个问题:
-
-- 将模拟器中的ADB替换为Alas使用的ADB。
-
-  如果你使用傻瓜式安装包安装的Alas，找到位于 `<你的Alas安装目录>\toolkit\Lib\site-packages\adbutils\binaries` 下的ADB. 如果你使用的高级方法安装的Alas，找到位于环境变量中的ADB，把它替换为你自己的。
-
-  以夜神模拟器为例，夜神模拟器安装目录下有两个ADB， `adb.exe` 和 `nox_adb.exe` 备份它们并删除. 复制两份 `adb.exe` 到夜神模拟器安装目录，重命名为 `adb.exe` 和 `nox_adb.exe`.
+消耗大量的时间，换取一定量的舰船经验，并依靠`短猫相接`补充凭证和换取少量的强化部件 T4。整体收益比不上 Alas 的其他功能，**除了让你感到十分充实以外没有其他作用**。如果你的 Alas 正在长时间运行侵蚀 1，说明它还不是最高效率运行。
+:::warning
+启动侵蚀 1 后，大型作战中将**不会购买紫币**，从而节约黄币开销。
+:::

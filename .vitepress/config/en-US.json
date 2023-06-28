@@ -138,6 +138,10 @@
             {
               "text": "FAQs",
               "link": "/manual/quick-start/FAQ"
+            },
+            {
+              "text": "Errors",
+              "link": "/manual/quick-start/normal-errors"
             }
           ]
         },
