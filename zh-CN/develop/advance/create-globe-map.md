@@ -50,7 +50,7 @@ A5, B5, C5, D5, E5, F5, G5, H5 = MAP.flatten()
 
 地图中所有网格的信息，以 7-2 为例
 
-![](/develop/advance/create-global-map/wiki_7_2.jpg)
+![](/develop/advance/create-globe-map/wiki_7_2.jpg)
 
 地图信息定义为
 
