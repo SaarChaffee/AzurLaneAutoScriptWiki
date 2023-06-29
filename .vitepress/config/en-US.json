@@ -552,6 +552,10 @@
               ]
             },
             {
+              "text": "Perspective",
+              "link": "/develop/perspective.md"
+            },
+            {
               "text": "PR steps",
               "link": "/develop/PR-steps.md"
             }

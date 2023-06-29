@@ -552,6 +552,10 @@
               ]
             },
             {
+              "text": "海图识别",
+              "link": "/develop/perspective.md"
+            },
+            {
               "text": "PR流程简述",
               "link": "/develop/PR-steps.md"
             }
