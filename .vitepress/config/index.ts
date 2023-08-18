@@ -18,7 +18,7 @@ export default async () => defineConfig({
   },
 
   themeConfig: {
-    indexName: 'docs',
+    indexName: 'wiki',
     logo: '/icon.ico',
     socialLinks: {
       github: 'https://github.com/LmeSzinc/AzurLaneAutoScript',
