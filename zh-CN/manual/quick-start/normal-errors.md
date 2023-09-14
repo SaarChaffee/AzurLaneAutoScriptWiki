@@ -28,9 +28,9 @@
 <hr/>
 
  - 1. 打开 Alas 根目录下的 `\toolkit\WebApp` 文件夹，右键 `alas.exe` 创建桌面快捷方式. 回到桌面，右键刚刚创建的快捷方式，打开属性
-   1. 在 `目标(T)` 的输入路径的最后面加上 ` --no-sandbox`，注意不要遗漏前面的空格
-   2. 在 `起始位置(S)` 的输入框中，你会看到如 `D:\...\AzurLaneAutoScript\toolkit\WebApp` 的路径，删除 `\toolkit\WebApp`，确保路径只到 Alas 的根目录文件夹
-   3. 通过这个快捷方式启动 Alas
+   2. 在 `目标(T)` 的输入路径的最后面加上 ` --no-sandbox`，注意不要遗漏前面的空格
+   3. 在 `起始位置(S)` 的输入框中，你会看到如 `D:\...\AzurLaneAutoScript\toolkit\WebApp` 的路径，删除 `\toolkit\WebApp`，确保路径只到 Alas 的根目录文件夹
+   4. 通过这个快捷方式启动 Alas
 
 
 ![Desktop 2023 05 29 - 12 04 08 02 00_00_00-00_00_30~1](/manual/quick-start/errors/whitescreen1.gif)
