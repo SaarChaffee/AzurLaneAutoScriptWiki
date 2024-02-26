@@ -159,7 +159,7 @@
 | PlateRandom           | `4`                                                | `PlateRandomT4`                                      |
 | Retrofit              | `1-3`(Medal), `2-3`(Guild)                         | `RetrofitT3`, `RetrofitDDT3`                         |
 | Retrofit              | `1-3`(Medal), `2-3`(Guild)                         | `RetrofitT3`, `RetrofitDDT3`                         |
-| Tuning                | `2`(Voucher)                                       | `TuningT2`                                           |
+| Tuning                | `Tuning`(Voucher), `TuningSample`(Voucher)         | `TuningCombat` ,`   TuningSampleCombat`              |
 
 ### 科研蓝图
 
