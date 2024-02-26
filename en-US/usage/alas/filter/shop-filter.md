@@ -128,14 +128,14 @@
 | `LoggerObscure` | 塞壬坐标记录仪       |
 
 | Tuning 类              | 描述               |
-| ---------------------- | ------------------ | ----------------- |
-| `Tuning`               | 任意类型的效能样本 |
-| `TuningCombat`         | Tuning combat      | 强力效能样本-攻击 |
-| `TuningOffense`        | Tuning offense     | 强力效能样本-耐久 |
-| `TuningSurvival`       | Tuning survival    | 强力效能样本-恢复 |
-| `TuningSampleCombat`   | Tuning combat T1   | 效能样本-攻击     |
-| `TuningSampleOffense`  | Tuning offense T1  | 效能样本-耐久     |
-| `TuningSampleSurvival` | Tuning survival T1 | 效能样本-恢复     |
+| ---------------------- | ------------------ |
+| `Tuning`               | Tuning samples of any type |
+| `TuningCombat`         | Tuning combat      |
+| `TuningOffense`        | Tuning offense     |
+| `TuningSurvival`       | Tuning survival    |
+| `TuningSampleCombat`   | Tuning combat T1   |
+| `TuningSampleOffense`  | Tuning offense T1  |
+| `TuningSampleSurvival` | Tuning survival T1 |
 
 ### 稀有度
 
