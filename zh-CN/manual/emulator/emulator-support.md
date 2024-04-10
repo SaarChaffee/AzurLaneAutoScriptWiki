@@ -54,7 +54,7 @@ MuMu 手游助手，又称 MuMu星云引擎、黄MuMu，是已经被网易放弃
 
 完美支持。MuMu X 对较低配置的电脑支持更好，整体流畅度会提升。
 
-MuMu 模拟器国内版： https://mumu.163.com/ ，MuMu 模拟器国际版：https://www.mumuglobal.com/
+MuMu 模拟器国内版： ~~[https://mumu.163.com/](https://mumu.163.com/)~~ ，MuMu 模拟器国际版：https://www.mumuglobal.com/
 
 下载链接已经被官方下了，现在国内版安装包以及国际版安装包都需要在群文件里下载
 
@@ -69,13 +69,16 @@ MuMu 模拟器国内版： https://mumu.163.com/ ，MuMu 模拟器国际版：ht
 
 ## ✅ 在MuMu 12模拟器上运行Alas【推荐】
 
-完美支持。MuMu 12 对较低配置的电脑支持更好，整体流畅度会提升。
+完美支持。MuMu 12 对较低配置的电脑支持更好，整体流畅度会提升。支持控制模拟器启动和重启。
+
+对于 3.8.13 及以上的版本支持直接调用 nemu ipc，拥有最快的性能和最少的占用。
 
 MuMu 模拟器国内版： https://mumu.163.com/ 
 
 :::warning
 1. MUMU 12 和  MuMu X 和 MuMu 6（老MuMu）也不能同时使用。
 2. Alas 可以使用 `auto` 主动连接到MuMu 12 ，也可以多开分别填写ADB地址。
+3. 要使用 nemu ipc，需要手动填写正确的 `Serial`，这可以在模拟器启动后，在多开器右上角 ADB 字样的按钮中找到；需要填写正确的模拟器设置，建议配置好 `Serial` 后，将模拟器类型置于自动检测，让 Alas 自动配置。
 :::
 
 ## ⚠ 在雷电模拟器上运行Alas
