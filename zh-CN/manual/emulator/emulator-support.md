@@ -54,7 +54,7 @@ MuMu 手游助手，又称 MuMu星云引擎、黄MuMu，是已经被网易放弃
 
 完美支持。MuMu X 对较低配置的电脑支持更好，整体流畅度会提升。
 
-MuMu 模拟器国内版： https://mumu.163.com/ ，MuMu 模拟器国际版：https://www.mumuglobal.com/
+MuMu 模拟器国内版： ~~https://mumu.163.com/~~ ，MuMu 模拟器国际版：https://www.mumuglobal.com/
 
 下载链接已经被官方下了，现在国内版安装包以及国际版安装包都需要在群文件里下载
 
