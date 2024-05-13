@@ -18,6 +18,7 @@ GUI 中选项储存在 argument/args.json 中，它有 3 个层级。
 | value    | 值                                   |
 | option   | （可选）下拉菜单列表中的元素         |
 | validate | （可选）校验类型，比如时间格式的校验 |
+| display | （可选）显示类型，比如禁止更改或在界面上隐藏 |
 
 args.json 是由 config_updater.py 生成的，每次修改选项后，都应该运行 config_updater.py 来生成，而不是手动修改 args.json。
 

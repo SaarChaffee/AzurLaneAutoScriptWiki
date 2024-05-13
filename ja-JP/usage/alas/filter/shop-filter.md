@@ -6,7 +6,7 @@
 
 | 过滤项 | 描述         |
 | ------ | ------------ |
-| Box    | 装备箱       |
+| Box    | 科技箱       |
 | Book   | 舰艇教材     |
 | Food   | 后宅食物     |
 | Plate  | 强化部件     |
@@ -17,32 +17,33 @@
 
 | 过滤项   | 描述       |
 | -------- | ---------- |
-| Box      | 装备箱     |
+| Box      | 科技箱     |
 | Book     | 舰艇教材   |
 | Food     | 后宅食物   |
 | Plate    | 强化部件   |
 | Retrofit | 改造图纸   |
-| PR       | 金科研图纸 |
+| PR       | 金定向蓝图 |
 | Cat      | 喵箱       |
 | Chip     | 心智单元   |
 
 ### 兑换商店
 
-| 过滤项   | 描述       |
-| -------- | ---------- |
-| Book     | 舰艇教材   |
-| Food     | 后宅食物   |
-| Plate    | 强化部件   |
-| Retrofit | 改造图纸   |
-| PR       | 金科研图纸 |
-| DR       | 彩科研图纸 |
-| Bulin    | 布里       |
+| 过滤项          | 描述       |
+| --------------- | ---------- |
+| Book            | 舰艇教材   |
+| Food            | 后宅食物   |
+| Plate           | 强化部件   |
+| Retrofit        | 改造图纸   |
+| PR              | 金定向蓝图 |
+| DR              | 彩定向蓝图 |
+| Bulin           | 布里       |
+| SpecializedCore | 特装原型   |
 
 ### 军需商店
 
 | 过滤项 | 描述   |
 | ------ | ------ |
-| Box    | 装备箱 |
+| Box    | 科技箱 |
 | Bulin  | 布里   |
 | Cube   | 魔方   |
 
@@ -53,7 +54,7 @@
 | Chip    | 心智单元   |
 | Array Ⅱ | 心智单元 Ⅱ |
 
-### 大世界每月白票商店
+### 大世界特别兑换商店（白票商店）
 
 | 过滤项       | 描述         |
 | ------------ | ------------ |
@@ -65,24 +66,24 @@
 
 ### 大世界港口商店
 
-| Expression                     | 描述              |
-| ------------------------------ | ----------------- |
-| ActionPoint                    | 行动力            |
-| CrystallizedHeatResistantSteel | 结晶化热强钢      |
-| DevelopmentMaterial            | 装备研发物资箱    |
-| EnergyStorageDevice            | 塞壬能源储存容器  |
-| GearDesignPlan                 | 装备研发图纸      |
-| GearPart                       | 突破部件          |
-| Logger                         | 坐标记录仪        |
-| METARedBook                    | META 通用战术教材 |
-| NanoceramicAlloy               | 纳米陶铝合金      |
-| NeuroplasticProstheticArm      | 可塑性机械臂      |
-| OrdnanceTestingReport          | 实验计划          |
-| PlateRandom                    | 未知装备部件      |
-| PurpleCoins                    | 紫币              |
-| RepairPack                     | 维修箱            |
-| SupercavitationGenerator       | 超空泡发生器      |
-| Tuning                         | 效能样本          |
+| Expression                     | 描述                 |
+| ------------------------------ | -------------------- |
+| ActionPoint                    | 能源补给箱（行动力） |
+| CrystallizedHeatResistantSteel | 结晶化热强钢         |
+| DevelopmentMaterial            | 装备研发物资箱       |
+| EnergyStorageDevice            | 塞壬能源储存容器     |
+| GearDesignPlan                 | 装备研发图纸         |
+| GearPart                       | 装备突破部件         |
+| Logger                         | 坐标记录仪           |
+| METARedBook                    | META 通用战术教材    |
+| NanoceramicAlloy               | 纳米陶铝合金         |
+| NeuroplasticProstheticArm      | 可塑性机械臂         |
+| OrdnanceTestingReport          | 实验计划             |
+| PlateRandom                    | 未知装备部件         |
+| PurpleCoins                    | 特别兑换凭证（紫币） |
+| RepairPack                     | 维修箱               |
+| SupercavitationGenerator       | 超空泡发生器         |
+| Tuning                         | 效能样本             |
 
 ## 选择种类及稀有度
 
@@ -129,13 +130,13 @@
 
 | Tuning 类              | 描述               |
 | ---------------------- | ------------------ |
-| `Tuning`               | Tuning samples of any type |
-| `TuningCombat`         | Tuning combat      |
-| `TuningOffense`        | Tuning offense     |
-| `TuningSurvival`       | Tuning survival    |
-| `TuningSampleCombat`   | Tuning combat T1   |
-| `TuningSampleOffense`  | Tuning offense T1  |
-| `TuningSampleSurvival` | Tuning survival T1 |
+| `Tuning`               | 任意类型的效能样本 |
+| `TuningCombat`         | 强力效能样本-攻击  |
+| `TuningOffense`        | 强力效能样本-耐久  |
+| `TuningSurvival`       | 强力效能样本-恢复  |
+| `TuningSampleCombat`   | 效能样本-攻击      |
+| `TuningSampleOffense`  | 效能样本-耐久      |
+| `TuningSampleSurvival` | 效能样本-恢复      |
 
 ### 稀有度
 
@@ -237,7 +238,7 @@ Cube > Bulin > BoxT3
 Chip > Array
 ```
 
-### 大世界每月白票商店
+### 大世界特别兑换商店（白票商店）
 
 ```text
 LoggerAbyssal > LoggerObscure > HECombatPlan > Tuning > Book > Coin
