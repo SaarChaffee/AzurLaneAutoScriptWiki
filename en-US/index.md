@@ -50,8 +50,6 @@ footer:
     items:
       - text: Discord
         link: https://discord.gg/AQN6GeJ
-      - text: GitHub Discussions
-        link: https://github.com/LmeSzinc/AzurLaneAutoScript/discussions
 
 
 ---

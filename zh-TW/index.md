@@ -48,19 +48,14 @@ footer:
 
   - text: 交流
     items:
-      - text: QQ 一群 (已满)
+      - text: QQ 一群
         link: https://jq.qq.com/?_wv=1027&k=I4NSqX7g
-      - text: QQ 二群
-        link: https://jq.qq.com/?_wv=1027&k=FUIOAAOm
-      - text: QQ 三群
-        link: http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Q611gtXy-y0ttnfHOQNegXjerUI2tWIy
-      - text: QQ 频道
-        link: https://qun.qq.com/qqweb/qunpro/share?inviteCode=20hHAfycu5p
+      - text: QQ 六群
+        link: http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=AzW2qRgtfAYCXJFFbzVjYUNxoUInYZOP&authKey=8tMiii5txWNZlmuRyxblLlN1jIvyPKbqeRBbHOIsiOayqhr5HvoEei3Y7n4p5TFI&noverify=0&group_code=410355575
       - text: Discord
         link: https://discord.gg/AQN6GeJ
-      - text: GitHub Discussions
-        link: https://github.com/LmeSzinc/AzurLaneAutoScript/discussions
-
+      - text: bilibili 直播间
+        link: https://live.bilibili.com/22216705
 
 ---
 

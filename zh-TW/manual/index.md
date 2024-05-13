@@ -91,15 +91,14 @@ Alas 仍在活跃开发中，我们会不定期发布未来的工作在 [Issues]
 - [ALAuto homg_trans_beta](https://github.com/asd111333/ALAuto/tree/homg_trans_beta)，Alas 引入了其中的单应性变换至海图识别模块中。
 - [PyWebIO](https://github.com/pywebio/PyWebIO)，Alas 使用的 GUI 库。
 - [MaaAssistantArknights](https://github.com/MaaAssistantArknights/MaaAssistantArknights)，明日方舟小助手，全日常一键长草，现已加入Alas豪华午餐 -> [MAA 插件使用教程](../plugins/maa)
+- [FGO-py](https://github.com/hgjazhgj/FGO-py)，全自动免配置跨平台开箱即用的Fate/Grand Order助手.启动脚本,上床睡觉,养肝护发,满加成圣诞了解一下? 
+- [StarRailCopilot](https://github.com/LmeSzinc/StarRailCopilot)，星铁速溶茶，崩坏：星穹铁道脚本，基于下一代Alas框架。
 
 ## 交流平台
 
-- QQ 一群(已满)：[1087735381](https://jq.qq.com/?_wv=1027&k=I4NSqX7g)
-- QQ 二群：[576458886](https://jq.qq.com/?_wv=1027&k=FUIOAAOm)
-- QQ 三群：[834210833](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Q611gtXy-y0ttnfHOQNegXjerUI2tWIy)
-- QQ 频道: [https://qun.qq.com/qqweb/qunpro/share?inviteCode=20hHAfycu5p](https://qun.qq.com/qqweb/qunpro/share?inviteCode=20hHAfycu5p)
+- QQ 一群：[1087735381](https://jq.qq.com/?_wv=1027&k=I4NSqX7g)
+- QQ 六群：[410355575](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=AzW2qRgtfAYCXJFFbzVjYUNxoUInYZOP&authKey=8tMiii5txWNZlmuRyxblLlN1jIvyPKbqeRBbHOIsiOayqhr5HvoEei3Y7n4p5TFI&noverify=0&group_code=410355575)
 - Discord: [https://discord.gg/AQN6GeJ](https://discord.gg/AQN6GeJ)
-- Github Discussions: [Discussions](https://github.com/LmeSzinc/AzurLaneAutoScript/discussions)
 - ALAS-Official: [22501720](https://space.bilibili.com/22501720)
 - Lme 的 Bilibili 直播间：[22216705](https://live.bilibili.com/22216705) ，偶尔直播写Alas，~~为了拯救Alas，Lme决定出道成为偶像~~
 > 注意(加群潜规则，雾)：
