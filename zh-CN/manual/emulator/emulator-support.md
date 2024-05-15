@@ -33,52 +33,17 @@
 夜神模拟器在设备性能一般的情况下表现会明显下滑，而在高配设备则几乎没有影响。
 :::
 
-## ⚠ 在 MuMu 6（老MuMu）模拟器上运行Alas
-
-支持。但 MuMu 6 相较于 MuMu X 以及 MuMu 12，已经显得老旧，不推荐使用。
-
-MuMu 模拟器国内版： https://mumu.163.com/ ，MuMu 模拟器国际版：https://www.mumuglobal.com/
-
-:::warning
-1. 不能使用 MuMu 6 模拟器的多开，因为使用的是同一个 ADB 端口。
-2. 由于 MuMu 6 模拟器需要管理员权限启动，Alas 也需要以管理员权限启动才能启停 MuMu 6 模拟器。
-:::
-
-## 🚫 在MuMu手游助手上运行Alas
-
-不支持。
-
-MuMu 手游助手，又称 MuMu星云引擎、黄MuMu，是已经被网易放弃的项目，~~下载链接在官网都找不到了~~，不建议使用。MuMu 手游助手不支持 ADB，所以无法运行 Alas 及所有基于 ADB 的脚本。
-
-## ✅ 在MuMu X 模拟器上运行Alas【推荐】
-
-完美支持。MuMu X 对较低配置的电脑支持更好，整体流畅度会提升。
-
-MuMu 模拟器国内版： ~~[https://mumu.163.com/](https://mumu.163.com/)~~ ，MuMu 模拟器国际版：https://www.mumuglobal.com/
-
-下载链接已经被官方下了，现在国内版安装包以及国际版安装包都需要在群文件里下载
-
-:::warning
-1. MuMu X 需要更新到 12.1.6 或更高版本，否则截图和识别会出现问题。
-2. 虽然 MuMu X 增加了模拟器多开，但还是不能多开运行，因为它们共享同一个 ADB 端口无法区分。
-3. 由于 MuMu X 模拟器需要管理员权限启动，Alas 也需要以管理员权限启动才能启停 MuMu X 模拟器。
-4. MuMu X 和 MuMu 6（老MuMu）也不能同时使用，因为他们共享同一个 ADB 端口无法区分。
-5. Alas不能使用auto主动连接到MuMu X ，需要填写正确的端口号 `127.0.0.1:7555` 才能连接。
-6. 最新版MuMu X国内版启动有更新MuMu 12的弹窗，而国际版没有。
-:::
-
-## ✅ 在MuMu 12模拟器上运行Alas【推荐】
+## ✅ 在MuMu12上运行Alas【推荐】
 
 完美支持。MuMu 12 对较低配置的电脑支持更好，整体流畅度会提升。支持控制模拟器启动和重启。
 
-对于 3.8.13 及以上的版本支持直接调用 nemu ipc，拥有最快的性能和最少的占用。
+建议使用 3.8.13 版本或以上版本，因为从这个版本开始的MuMu增加了专属截图方案 `nemu_ipc`，拥有最快的速度和最少的占用。
 
-MuMu 模拟器国内版： https://mumu.163.com/ 
+MuMu 模拟器国内版： https://mumu.163.com/ ，MuMu 模拟器国际版：https://www.mumuplayer.com/
 
 :::warning
 1. MUMU 12 和  MuMu X 和 MuMu 6（老MuMu）也不能同时使用。
-2. Alas 可以使用 `auto` 主动连接到MuMu 12 ，也可以多开分别填写ADB地址。
-3. 要使用 nemu ipc，需要手动填写正确的 `Serial`，这可以在模拟器启动后，在多开器右上角 ADB 字样的按钮中找到；需要填写正确的模拟器设置，建议配置好 `Serial` 后，将模拟器类型置于自动检测，让 Alas 自动配置。
+2. 关闭`后台应用保活功能`。
 :::
 
 ## ⚠ 在雷电模拟器上运行Alas
@@ -92,7 +57,7 @@ MuMu 模拟器国内版： https://mumu.163.com/
 1. ADB 连接报错 `unknown host service`。
 2. serial 在 `127.0.0.1:555X` 和 `emulator-555X` 之间横跳。
 3. 随机发生的屏幕上下翻转。
-4. 随机发生的控制不生效，模拟器控制方案里使用 MaaTouch 或 ADB 或许可以缓解这个问题。
+4. 随机发生的控制不生效，模拟器控制方案里使用 MaaTouch 或许可以缓解这个问题。
 
 ![LDPlayer_ADB](/manual/emulator/support/LDPlayer_ADB.png)
 
@@ -102,15 +67,17 @@ MuMu 模拟器国内版： https://mumu.163.com/
 
 逍遥模拟器国内版：https://www.xyaz.cn/ ，逍遥模拟器国际版：https://www.memuplay.com/
 
-如果在使用逍遥模拟器时出现点击不生效的情况，需要将控制方式设置为 `uiautomator2`。
+如果在使用逍遥模拟器时出现点击不生效的情况，需要将控制方式设置为 `MaaTouch`。
 
-## ⚠ 在Win11 WSA上运行Alas
+## 🚫 在Win11 WSA上运行Alas
 
-支持，但需要折腾。
+不再提供支持，快跑。https://learn.microsoft.com/zh-cn/windows/android/wsa/
 
-仅支持 WSA 2203 或更老版本（版本号在子系统设置页面的上方），对于 WSA 2204 或更高版本可以参照 [#1560](https://github.com/LmeSzinc/AzurLaneAutoScript/pull/1560) 进行适配，适配完成后欢迎提交 PR。
+::: warning
+Microsoft 正在停止为适用于 Android™️ 的 Windows 子系统 (WSA) 提供支持。 自 2025 年 3 月 5 日起，将不再支持 Windows 上的 Amazon Appstore 以及依赖于 WSA 的所有应用程序和游戏。
+:::
 
-WSA 现在还是有一堆的 bug 微软也不修，对于普通的游戏玩家，我们非常建议卸载 WSA、关闭 Hyper-V，并使用模拟器。
+WSA 现在还是有一堆的 bug 微软也不修，对于普通的游戏玩家，我们非常建议卸载 WSA、关闭 Hyper-V、并使用模拟器。
 
 ## ✅ 在AVD上运行Alas
 
@@ -136,33 +103,15 @@ AVD：https://developer.android.com/studio/run/managing-avds
 
 参照 [在 Docker 中安装](../install/docker)。
 
-## ✅ 在星界链云手机上运行游戏+在云服务器上运行Alas【推荐】
+## ✅ 使用星界链云手机Alas版本
 
-支持。
+支持，参考 [星界链提供的教程](https://www.chinac.com/docs/help/anc/content/third/Alas) 。
 
-将游戏和 Alas 上云需要购买云手机和云服务器。[星界链](https://www.chinac.com/) 是目前唯一免费提供公网 ADB 的云手机厂商，所有基于 ADB 的脚本都可以完美迁移到星界链云手机上。云服务器可以购买腾讯云或者阿里云的，新用户首年只要大概几十块。Alas 对 CPU 和内存的要求很低，最低配置即可运行。
+星界链云手机的Alas版内置后台运行的Alas服务与云手机内网连接，方便上云使用。
 
-注册帐号并购买云手机，注意事项如下：
-
-1. 必须购买带 `全新升级` 标签的区域，这里是江苏二区、福建一区、香港二区，不带 `全新升级` 标签的云手机打开碧蓝航线全是黑屏，建议购买江苏二区。
-2. 云手机和云服务器的物理位置要相近，这样延迟低，并且不能过墙。深圳和香港地理位置相近但是因为中间有墙，延迟可能是绕地球10圈。
-3. 建议购买 38 元每月的云手机，配置过低可能导致 Meta 战的时候游戏闪退。
-
-![chinac_buy](/manual/emulator/support/chinac_buy.png)
-
-
-购买了云手机之后，在网页控制台处进入 `ADB连接`。
-
-![chinac_adb_1](/manual/emulator/support/chinac_adb_1.png)
-
-勾选你的云手机，开通ADB连接服务；在 `IP白名单` 处填入你云服务器的 IP 地址，复制右边的 `ADB连接地址`，填入 `Alas` - `Alas 设置` - `模拟器 Serial`。
-
-![chinac_adb_2](/manual/emulator/support/chinac_adb_2.png)
-
-:::warning
-1. 在公网ADB上不能使用带有 `_nc` 后缀的截图方案，一般使用 `ascreencap` 截图和 `minitouch` 点击。
-2. 云手机不是本地模拟器，不能使用 Alas 内的重启模拟器功能。
-:::
+> 这里有一个充值满 36 送 4 的推荐码，每个帐号可以使用三次：qpCoSu
+>
+> 注意这个是充值推荐码，需要先充值，充值的时候才能用。当然，你使用这个推荐码 lme 并不会收到一分钱，但是你确实可以省12块钱。
 
 ## ✅ 在传统云手机上运行游戏+在云服务器上运行Alas
 
