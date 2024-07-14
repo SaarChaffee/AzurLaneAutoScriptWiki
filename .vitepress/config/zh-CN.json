@@ -522,6 +522,10 @@
                 {
                   "text": "光学字符识别",
                   "link": "/develop/intermediate/ocr"
+                },
+                {
+                  "text": "条件循环",
+                  "link": "/develop/intermediate/state-loop"
                 }
               ]
             },
