@@ -3,7 +3,7 @@ layout: home
 
 links:
   start: /zh-CN/manual/
-  download: https://alas.saarcenter.com/download
+  download: https://www.123pan.com/s/5ujtVv-JfL4h.html
   demo: https://alas.azurlane.cloud/demo/
 
 home:
