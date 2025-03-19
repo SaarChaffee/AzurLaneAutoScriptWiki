@@ -283,4 +283,21 @@ Python 3.8.10
 pip 21.1.1 from /usr/local/lib/python3.8/site-packages/pip (puthon 3.8)
 
 ```
+
+:::tip
+另外如果按照上面的步骤，成功部署了模拟器和脚本运行环境，你可能会遇到以下错误：
+
+`ModlueNotFoundError: No module named '_bz2'`
+
+如果能正常运行，请跳过该步骤
+:::
+
+获取相关文件
+```sh
+wget https://github.com/nuaalyh/Note/blob/master/python/_bz2.cpython-38-x86_64-linux-gnu.so
+```
+复制到对应位置，注意目标文件路径，一定是`lib-dynload`这个文件夹
+```sh
+sudo cp ./_bz2.cpython-38-x86_64-linux-gnu.so /usr/local/lib/python3.8/lib-dynload
+```
 恭喜，你已经成功编译并安装了一个 python！接下来可以继续[安装 Alas ](#准备运行所需工具)了。
