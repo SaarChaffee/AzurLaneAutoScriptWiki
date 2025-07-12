@@ -19,6 +19,7 @@
 | S5     | 五期科研 |
 | S6     | 六期科研 |
 | S7     | 七期科研 |
+| S8     | 八期科研 |
 
 ## Genre
 
@@ -84,28 +85,28 @@ DR|PRY
 | Anchorage | 安克雷奇 |
 | Hakuryu   | 白龙     |
 | Agir      | 埃吉尔   |
-| August    | 奥古斯特 |
+| August    | 奥古斯特·冯·帕塞瓦尔 |
 | MarcoPolo | 马可波罗 |
 
 ### S5|五期
 
-| Name      | 舰娘名称   |
-| --------- | ---------- |
-| Plymouth  | 普利茅斯   |
-| Rupprecht | 普鲁雷希特 |
-| Harbin    | 哈尔滨     |
-| Chkalov   | 契卡洛夫   |
-| Brest     | 布雷斯特   |
+| Name      | 舰娘名称       |
+| --------- | ----------     |
+| Plymouth  | 普利茅斯       |
+| Rupprecht | 鲁普雷希特亲王 |
+| Harbin    | 哈尔滨         |
+| Chkalov   | 契卡洛夫       |
+| Brest     | 布雷斯特       |
 
 ### S6|六期
 
-| Name       | 舰娘名称          |
-| ---------- | ----------------- |
-| Kearsarge  | 奇尔沙治          |
-| Shimanto   | 四万十            |
-| Schultz    | 弗郎西斯卡·舒伯特 |
-| Hindenburg | 兴登堡            |
-| Flandre    | 弗兰德尔          |
+| Name       | 舰娘名称        |
+| ---------- | --------------- |
+| Kearsarge  | 奇尔沙治        |
+| Shimanto   | 四万十          |
+| Schultz    | 菲利克斯·舒尔茨 |
+| Hindenburg | 兴登堡          |
+| Flandre    | 弗兰德尔        |
 
 ### S7|七期
 
@@ -116,6 +117,16 @@ DR|PRY
 | Halford  | 哈尔福德         |
 | Bayard   | 贝亚德           |
 | Daisen   | 大山             |
+
+### S8|八期
+
+| Name        | 舰娘名称            |
+| ----------- | ------------------- |
+| GoudenLeeuw | 金狮                |
+| Mecklenburg | 梅克伦堡            |
+| Dmitri      | 迪米特里·顿斯科伊   |
+| Kansas      | 堪萨斯              |
+| Vittorio    | 维托里奥·库尼贝尔蒂 |
 
 ## Duration
 
